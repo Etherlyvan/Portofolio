@@ -1,0 +1,155 @@
+[
+  {
+    "file": "hero-person.webp",
+    "width": 810,
+    "height": 1080,
+    "bytes": 62488,
+    "transparent": true,
+    "prompt": "Use case: precise-object-edit / identity-preserve. Edit this exact existing portrait. USER complains head is disproportionately large. Change BODY/HEAD SCALE ONLY: reduce entire head including hair uniformly by approximately 22 percent relative to shoulders and torso, preserve ALL facial pixels/features and expression as closely as possible; same person exact likeness, same hair silhouette. Reconnect natural neck seamlessly and increase shoulder breadth modestly ~10%, realistic slender adult anatomy, relaxed shoulders. Wider medium portrait, show head to upper thighs/hips rather than tight bust. Head crown-to-chin should occupy approximately 22-25% of total subject visible height and head width approximately 30-33% of outer shoulder width. Do not redesign face, do not beautify or enlarge eyes, no changes to nose/lips/jaw. Keep same clothes, pose and comic texture. Full hair and shoulders inside canvas with breathing room. Maintain genuine transparent background and no white outline. Black bomber jacket red lining.",
+    "source": "Built-in imagegen; identity reference: user-supplied Jovan photo; approved comic concept style."
+  },
+  {
+    "file": "about-person.webp",
+    "width": 720,
+    "height": 960,
+    "bytes": 30826,
+    "transparent": false,
+    "prompt": "Use case: precise-object-edit / identity-preserve. Edit this exact existing portrait. USER complains head is disproportionately large. Change BODY/HEAD SCALE ONLY: reduce entire head including hair uniformly by approximately 22 percent relative to shoulders and torso, preserve ALL facial pixels/features and expression as closely as possible; same person exact likeness, same hair silhouette. Reconnect natural neck seamlessly and increase shoulder breadth modestly ~10%, realistic slender adult anatomy, relaxed shoulders. Wider medium portrait, show head to upper thighs/hips rather than tight bust. Head crown-to-chin should occupy approximately 22-25% of total subject visible height and head width approximately 30-33% of outer shoulder width. Do not redesign face, do not beautify or enlarge eyes, no changes to nose/lips/jaw. Keep same clothes, pose and comic texture. Full hair and shoulders inside canvas with breathing room. Maintain light gray background and dark blazer with white shirt.",
+    "source": "Built-in imagegen; identity reference: user-supplied Jovan photo; approved comic concept style."
+  },
+  {
+    "file": "contact-person.webp",
+    "width": 720,
+    "height": 960,
+    "bytes": 99262,
+    "transparent": false,
+    "prompt": "Use case: identity-preserve. The two attached photographs show the SAME real man at side/profile angles and looking upward. Use BOTH to learn his actual face anatomy, natural cheeks, nose, lips, chin, faint moustache, small chin mark, ears and parted black hair. Preserve identity accurately, do not beautify into an angular generic fashion model. User complains EVERY image has the same head angle and expression: REQUIRED deliver the exact DISTINCT camera/head/gaze/expression below. Clothing/posture can change. Semi-realistic hand-inked manga with fine crosshatching and halftone, realistic face proportions. Portrait 3:4, keep full hair with generous top space, no text logos watermarks. Candid waist-up seated relaxed in cream tee and dark denim overshirt, face turned LEFT and slightly upward like SECOND attached photo, soft joyful smile as if enjoying conversation, eyes looking upward beyond camera. Amber waterfront evening lights. Natural skin.",
+    "source": "Built-in imagegen; identity reference: user-supplied Jovan photo; approved comic concept style."
+  },
+  {
+    "file": "projects/batikpedia.webp",
+    "width": 800,
+    "height": 500,
+    "bytes": 102528,
+    "transparent": false,
+    "prompt": "Original manga editorial illustration for a developer portfolio. Detailed ink linework, strong black shadows, white highlights, grayscale halftone with vivid red #ff002b accents. Sharp professional punk magazine art direction. No lettering, logos, frames, watermark, copyrighted characters, or real identifiable people. Render a single complete image, not a collage sheet. Landscape 16:10 conceptual image of an immersive museum of Indonesian batik, architectural perspective of a dark modern exhibition hall with display cases, intricately patterned batik fabric panels, spotlight pools, a small abstract visitor silhouette for scale. Rich black, white and red duotone. This is a conceptual project illustration, no fake website interface or text.",
+    "source": "Generated using built-in imagegen; fictional illustration placeholder."
+  },
+  {
+    "file": "projects/genbatik.webp",
+    "width": 800,
+    "height": 500,
+    "bytes": 150324,
+    "transparent": false,
+    "prompt": "Original manga editorial illustration for a developer portfolio. Detailed ink linework, strong black shadows, white highlights, grayscale halftone with vivid red #ff002b accents. Sharp professional punk magazine art direction. No lettering, logos, frames, watermark, copyrighted characters, or real identifiable people. Render a single complete image, not a collage sheet. Landscape 16:10 conceptual image of AI-powered Indonesian batik design: intricate flowing floral and geometric batik cloth patterns centered on an ornamental square, with faint circuit and neural connection diagrams around the edges. Beautiful red, black, white textile detail. No app interface or text.",
+    "source": "Generated using built-in imagegen; fictional illustration placeholder."
+  },
+  {
+    "file": "projects/raho-erp.webp",
+    "width": 800,
+    "height": 500,
+    "bytes": 85516,
+    "transparent": false,
+    "prompt": "Original manga editorial illustration for a developer portfolio. Detailed ink linework, strong black shadows, white highlights, grayscale halftone with vivid red #ff002b accents. Sharp professional punk magazine art direction. No lettering, logos, frames, watermark, copyrighted characters, or real identifiable people. Render a single complete image, not a collage sheet. Landscape 16:10 conceptual software operations dashboard drawn as an isometric monitor on a desk. On screen show clean unlabeled tables, red bar charts, process nodes, task cards as abstract visual shapes. Crisp technical manga illustration with red accents. No legible words, no fake branding, not a real product screenshot.",
+    "source": "Generated using built-in imagegen; fictional illustration placeholder."
+  },
+  {
+    "file": "gallery/gallery-01.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 59676,
+    "transparent": false,
+    "prompt": "Use case: illustration-story. One landscape 3:2 artwork for an illustrated travel gallery in a developer portfolio. Original detailed manga ink drawing, cinematic scene, grayscale black and white with carefully placed vivid red accents, halftone textures, natural perspective, no readable text, no logos, no watermark, no frame, no recognizable fictional characters. Not a collage. Render only the scene. Scene: City skyline and a tall needle-shaped tower reflected in a calm waterfront at night, vivid red light reflections, dramatic dark sky.",
+    "source": "Generated using built-in imagegen; fictional illustration placeholder."
+  },
+  {
+    "file": "gallery/gallery-02.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 74348,
+    "transparent": false,
+    "prompt": "Use case: illustration-story. One landscape 3:2 artwork for an illustrated travel gallery in a developer portfolio. Original detailed manga ink drawing, cinematic scene, grayscale black and white with carefully placed vivid red accents, halftone textures, natural perspective, no readable text, no logos, no watermark, no frame, no recognizable fictional characters. Not a collage. Render only the scene. Scene: A tiny anonymous traveler in a dark coat seen from behind looking toward a modern night skyline across a river. Traveler kept small; environment is the focus.",
+    "source": "Generated using built-in imagegen; fictional illustration placeholder."
+  },
+  {
+    "file": "gallery/gallery-03.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 84746,
+    "transparent": false,
+    "prompt": "Use case: illustration-story. One landscape 3:2 artwork for an illustrated travel gallery in a developer portfolio. Original detailed manga ink drawing, cinematic scene, grayscale black and white with carefully placed vivid red accents, halftone textures, natural perspective, no readable text, no logos, no watermark, no frame, no recognizable fictional characters. Not a collage. Render only the scene. Scene: A Japanese side street passing beneath traditional torii gates, stone pavement, lanterns, overhead trees; red gates stand out against monochrome architecture.",
+    "source": "Generated using built-in imagegen; fictional illustration placeholder."
+  },
+  {
+    "file": "gallery/gallery-04.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 67834,
+    "transparent": false,
+    "prompt": "Use case: illustration-story. One landscape 3:2 artwork for an illustrated travel gallery in a developer portfolio. Original detailed manga ink drawing, cinematic scene, grayscale black and white with carefully placed vivid red accents, halftone textures, natural perspective, no readable text, no logos, no watermark, no frame, no recognizable fictional characters. Not a collage. Render only the scene. Scene: An intimate Japanese cafe interior, wooden counter, steaming cups and warm hanging lamps, tiny indistinct seated guests in background, red accent upholstery.",
+    "source": "Generated using built-in imagegen; fictional illustration placeholder."
+  },
+  {
+    "file": "gallery/gallery-05.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 83228,
+    "transparent": false,
+    "prompt": "Use case: illustration-story. One landscape 3:2 artwork for an illustrated travel gallery in a developer portfolio. Original detailed manga ink drawing, cinematic scene, grayscale black and white with carefully placed vivid red accents, halftone textures, natural perspective, no readable text, no logos, no watermark, no frame, no recognizable fictional characters. Not a collage. Render only the scene. Scene: A solitary anonymous traveler seen from behind on a lakeside boardwalk at sunset, reflections on water, layered mountains on horizon, red sky accents.",
+    "source": "Generated using built-in imagegen; fictional illustration placeholder."
+  },
+  {
+    "file": "gallery/gallery-06.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 80354,
+    "transparent": false,
+    "prompt": "Use case: illustration-story. One landscape 3:2 artwork for an illustrated travel gallery in a developer portfolio. Original detailed manga ink drawing, cinematic scene, grayscale black and white with carefully placed vivid red accents, halftone textures, natural perspective, no readable text, no logos, no watermark, no frame, no recognizable fictional characters. Not a collage. Render only the scene. Scene: A quiet winding mountain road into an expansive horizon beneath clouds, small distant red train crossing a bridge, sense of the next adventure.",
+    "source": "Generated using built-in imagegen; fictional illustration placeholder."
+  },
+  {
+    "file": "hero-manga.webp",
+    "width": 540,
+    "height": 720,
+    "bytes": 88244,
+    "transparent": false,
+    "prompt": "Use case: identity-preserve. The two attached photographs show the SAME real man at side/profile angles and looking upward. Use BOTH to learn his actual face anatomy, natural cheeks, nose, lips, chin, faint moustache, small chin mark, ears and parted black hair. Preserve identity accurately, do not beautify into an angular generic fashion model. User complains EVERY image has the same head angle and expression: REQUIRED deliver the exact DISTINCT camera/head/gaze/expression below. Clothing/posture can change. Semi-realistic hand-inked manga with fine crosshatching and halftone, realistic face proportions. Portrait 3:4, keep full hair with generous top space, no text logos watermarks. Strict black-white manga close-up of actual face in TRUE LEFT SIDE PROFILE like FIRST attached photo, nose points left, serious focused expression, black biker jacket, strong rim light, sparse city behind. Do not rotate face toward viewer. Monochrome.",
+    "source": "Built-in imagegen; identity reference: user-supplied Jovan photo; approved comic concept style."
+  },
+  {
+    "file": "manga/manga-01.webp",
+    "width": 540,
+    "height": 720,
+    "bytes": 90358,
+    "transparent": false,
+    "prompt": "Use case: identity-preserve. The two attached photographs show the SAME real man at side/profile angles and looking upward. Use BOTH to learn his actual face anatomy, natural cheeks, nose, lips, chin, faint moustache, small chin mark, ears and parted black hair. Preserve identity accurately, do not beautify into an angular generic fashion model. User complains EVERY image has the same head angle and expression: REQUIRED deliver the exact DISTINCT camera/head/gaze/expression below. Clothing/posture can change. Semi-realistic hand-inked manga with fine crosshatching and halftone, realistic face proportions. Portrait 3:4, keep full hair with generous top space, no text logos watermarks. Black-white manga street scene head-to-thigh wearing long coat and white tee, walking away torso shown FROM BACK but head looking back over shoulder toward camera, playful small smile. City alley, wind in coat. Actual face prominently visible despite over-shoulder pose. Monochrome.",
+    "source": "Built-in imagegen; identity reference: user-supplied Jovan photo; approved comic concept style."
+  },
+  {
+    "file": "manga/manga-02.webp",
+    "width": 540,
+    "height": 720,
+    "bytes": 69512,
+    "transparent": false,
+    "prompt": "Use case: identity-preserve. The two attached photographs show the SAME real man at side/profile angles and looking upward. Use BOTH to learn his actual face anatomy, natural cheeks, nose, lips, chin, faint moustache, small chin mark, ears and parted black hair. Preserve identity accurately, do not beautify into an angular generic fashion model. User complains EVERY image has the same head angle and expression: REQUIRED deliver the exact DISTINCT camera/head/gaze/expression below. Clothing/posture can change. Semi-realistic hand-inked manga with fine crosshatching and halftone, realistic face proportions. Portrait 3:4, keep full hair with generous top space, no text logos watermarks. Black-white manga close-up chest-up wearing dark turtleneck, LOW CAMERA angle, head looking UP toward left skyline exactly like SECOND attached photo, contemplative expression lips neutral, natural chin and jaw not exaggerated. High contrast halftone. Monochrome.",
+    "source": "Built-in imagegen; identity reference: user-supplied Jovan photo; approved comic concept style."
+  },
+  {
+    "file": "manga/manga-03.webp",
+    "width": 540,
+    "height": 720,
+    "bytes": 99188,
+    "transparent": false,
+    "prompt": "Use case: identity-preserve. The two attached photographs show the SAME real man at side/profile angles and looking upward. Use BOTH to learn his actual face anatomy, natural cheeks, nose, lips, chin, faint moustache, small chin mark, ears and parted black hair. Preserve identity accurately, do not beautify into an angular generic fashion model. User complains EVERY image has the same head angle and expression: REQUIRED deliver the exact DISTINCT camera/head/gaze/expression below. Clothing/posture can change. Semi-realistic hand-inked manga with fine crosshatching and halftone, realistic face proportions. Portrait 3:4, keep full hair with generous top space, no text logos watermarks. Black-white manga coder waist-up wearing light hoodie dark vest, camera elevated looking DOWN slightly at man at desk, face bowed downward with gaze onto laptop, thoughtful expression, hand near chin, other hand keyboard. Keep facial features clearly visible from elevated front-left angle, not generic right-facing portrait. Monochrome.",
+    "source": "Built-in imagegen; identity reference: user-supplied Jovan photo; approved comic concept style."
+  },
+  {
+    "file": "manga/manga-04.webp",
+    "width": 540,
+    "height": 720,
+    "bytes": 64718,
+    "transparent": false,
+    "prompt": "Use case: identity-preserve. The two attached photographs show the SAME real man at side/profile angles and looking upward. Use BOTH to learn his actual face anatomy, natural cheeks, nose, lips, chin, faint moustache, small chin mark, ears and parted black hair. Preserve identity accurately, do not beautify into an angular generic fashion model. User complains EVERY image has the same head angle and expression: REQUIRED deliver the exact DISTINCT camera/head/gaze/expression below. Clothing/posture can change. Semi-realistic hand-inked manga with fine crosshatching and halftone, realistic face proportions. Portrait 3:4, keep full hair with generous top space, no text logos watermarks. Black-white manga waist-up wearing dark open coat, head THREE-QUARTER facing RIGHT, laughing naturally with open smile, cheeks raised and eyes slightly narrowed with joy, hand brushing hair away from forehead, lively city rooftop backdrop. Must be visibly joyful and animated not stern. Monochrome.",
+    "source": "Built-in imagegen; identity reference: user-supplied Jovan photo; approved comic concept style."
+  }
+]

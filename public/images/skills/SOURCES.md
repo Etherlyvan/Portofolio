@@ -1,0 +1,1 @@
+Technology SVGs: Simple Icons, https://github.com/simple-icons/simple-icons. Retrieved 2026-10-09. CC0; trademarks remain with their owners.

@@ -1,0 +1,12 @@
+---
+import { projects } from '../../data/projects';
+import { assets } from '../../config/assets';
+import ComicLabel from '../comic/ComicLabel.astro';
+import PortfolioImage from '../ui/PortfolioImage.astro';
+import '../../styles/projects-skills.css';
+---
+<div class="projects-art-bridge" aria-hidden="true">
+  <div class="projects-owner-panel"><img src={assets.hero.manga ?? ''} alt="" width="540" height="720" loading="lazy" /><span>BATIK.<br/>CODE.<br/>IMPACT.</span></div>
+  <div class="projects-maker-panel"><span>FROM IDEAS<br/>TO THINGS<br/>THAT WORK.</span></div>
+</div>
+<section id="projects" class="comic-section projects projects-concept"><div class="section-inner"><div class="section-top"><ComicLabel number="03" title="PROJECTS" /><div class="filters" data-filter-group="projects" aria-label="Filter projects" hidden>{[['all', 'All'], ['web', 'Web'], ['ai', 'AI'], ['business', 'Business'], ['3d', '3D/Interactive']].map(([value, label]) => <button data-filter={value} aria-pressed={value === 'all'}>{label}</button>)}</div></div><div class="project-grid" id="project-results">{projects.map(project => <article class="project-card" data-project data-category={project.category.join(' ')} id={project.slug}><div class="project-image"><PortfolioImage src={assets.projects[project.image]} alt={`${project.name} project concept illustration`} label={`${project.name.toUpperCase()} · PROJECT IMAGE`} variant={project.motif} width={640} height={400} /></div><div class="project-copy"><h3>{project.name}</h3><ul class="tech-tags">{project.technologies.map(tech => <li>{tech}</li>)}</ul><p>{project.description}</p><span class="panel-arrow" aria-hidden="true">↗</span></div></article>)}</div><p class="sr-only" id="project-status" aria-live="polite"></p><div class="center-action"><button class="comic-button secondary" data-reset-projects hidden>VIEW ALL PROJECTS <span>→</span></button></div></div></section>

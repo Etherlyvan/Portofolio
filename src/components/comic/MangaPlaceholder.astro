@@ -1,0 +1,6 @@
+---
+import PortfolioImage from '../ui/PortfolioImage.astro';
+interface Props { src?: string | null; red?: boolean; }
+const { src = null, red = false } = Astro.props;
+---
+<div class:list={['manga-panel', { 'manga-panel--red': red }]} aria-hidden="true"><PortfolioImage src={src} alt="" label="MANGA ART" variant="manga" /></div>

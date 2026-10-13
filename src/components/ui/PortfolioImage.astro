@@ -1,0 +1,6 @@
+---
+import PlaceholderImage from './PlaceholderImage.astro';
+interface Props { src: string | null; alt: string; label: string; variant?: string; width?: number; height?: number; eager?: boolean; }
+const { src, alt, label, variant, width = 400, height = 480, eager = false } = Astro.props;
+---
+{src ? <img src={src} alt={alt} width={width} height={height} loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : 'auto'} /> : <PlaceholderImage label={label} variant={variant} />}

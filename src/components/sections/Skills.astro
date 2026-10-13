@@ -1,0 +1,9 @@
+---
+import { skills } from '../../data/skills';
+import { assets } from '../../config/assets';
+import ComicLabel from '../comic/ComicLabel.astro';
+import MangaPlaceholder from '../comic/MangaPlaceholder.astro';
+import SkillIcon from '../ui/SkillIcon.astro';
+import '../../styles/projects-skills.css';
+---
+<section id="skills" class="comic-section skills skills-concept"><div class="section-inner"><div class="section-top"><ComicLabel number="04" title="SKILLS" /><div class="filters" data-filter-group="skills" aria-label="Filter skills" hidden>{[['all', 'All'], ['frontend', 'Frontend'], ['backend', 'Backend'], ['ai', 'AI/ML'], ['tools', 'Tools'], ['other', 'Other']].map(([value, label]) => <button data-filter={value} aria-pressed={value === 'all'}>{label}</button>)}</div></div><div class="skills-layout"><div class="skill-grid">{skills.map(skill => <div class="skill-tile" data-skill data-category={skill.category}><SkillIcon name={skill.name} color={skill.color} /><span>{skill.name}</span></div>)}</div><div class="skills-art"><MangaPlaceholder src={assets.manga[2]} /><p class="scribble paper-note">CURIOUS BUILDER.<br/>PROBLEM SOLVER.<br/>LIFELONG LEARNER.</p></div></div><p class="sr-only" id="skill-status" aria-live="polite"></p></div></section>

@@ -1,0 +1,17 @@
+node_modules
+dist
+.astro
+.git
+.gitignore
+.env
+.env.*
+.verification
+README.md
+IMAGE_REPLACEMENT_GUIDE.md
+*.log
+.DS_Store
+.vscode
+.idea
+placeholder-images.zip
+PLACEHOLDER_ASSETS.json
+design

@@ -1,0 +1,6 @@
+{
+  "generator": "built-in image_gen",
+  "prompt": "Precise local image edit. In this monochrome comic concert portrait, change ONLY the accessory on the bent wrist resting on the railing at image right. It was mistakenly drawn as a wristwatch. Replace it with a thin simple dark concert bracelet/wristband, with NO watch face, NO dial, NO clock, NO rectangular or round watch case. It should just wrap the wrist as a narrow flexible band. Preserve everything else exactly: identical face, expression, hair, body, hand anatomy, pose, black shirt, jeans, railing, arena background, grayscale ink hatching, framing and image dimensions. Do not redraw or beautify the person. Only remove the watch case and show a plain bracelet.",
+  "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-fa483d99-b00d-4707-9f13-d394080b6a78.png",
+  "destination": "public/images/manga/concert-panel-v2.webp"
+}

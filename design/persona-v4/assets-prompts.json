@@ -1,0 +1,17 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "name": "batik-ink-border",
+      "prompt": "Use case: illustration-story. Transparent decorative border asset for Indonesian software engineer portfolio graphic novel website. A tall narrow organic irregular strip of traditional Indonesian batik floral scrollwork and stylized leaves, elegant hand inked black with muted ochre gold line accents and a few vivid scarlet paint wisps. Dense intricate textile ornament, no keyboard coffee camera or other objects, no people, no text. Actual transparent background. Torn organic silhouette contained fully within canvas, vertical 1:3 format. Suitable along right edge of cream paper About and Projects section. Sophisticated aged ink woodcut, luxurious handmade batik culture, not a flat icon.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-efc6958d-99c9-40a6-b491-d29315ca5100.png",
+      "destination": "public/images/persona-v4/batik-ink-border.webp"
+    },
+    {
+      "name": "jovan-coding-v4",
+      "prompt": "Use case: identity-preserve. Reference image is owner's actual portrait; strictly preserve recognizable face shape, eyes, nose, mouth, center-part black hair and small facial features; no idealization or generic anime identity. Create monochrome manga editorial illustration of SAME Indonesian male software engineer, seated leaning forward at a laptop, typing with both hands, focused eyes looking down at screen, head proportional to adult torso, black casual shirt, three-quarter view. Horizontal composition showing head torso hands laptop and a little urban office line art behind him. Black ink, off-white paper, detailed hand drawn hatch shading, subtle realistic likeness, restrained comic style, no written text, no logos, no speech bubbles. Entire face and hands visible. Illustration meant as a wide right-side Skills panel in a website. Keep head naturally small relative to shoulders, not oversized.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-b82c54c3-d76c-41f8-9f7a-d76b20db549d.png",
+      "destination": "public/images/persona-v4/jovan-coding-v4.webp"
+    }
+  ]
+}

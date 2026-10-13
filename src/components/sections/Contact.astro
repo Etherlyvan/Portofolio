@@ -1,0 +1,8 @@
+---
+import { assets, links } from '../../config/assets';
+import ComicLabel from '../comic/ComicLabel.astro';
+import PhotoFrame from '../comic/PhotoFrame.astro';
+import MangaPlaceholder from '../comic/MangaPlaceholder.astro';
+import PortfolioImage from '../ui/PortfolioImage.astro';
+---
+<section id="contact" class="comic-section contact"><div class="section-inner"><ComicLabel number="06" title="LET’S TALK" /><div class="contact-grid"><MangaPlaceholder src={assets.manga[3]} /><div class="contact-copy"><p>Have a project in mind?<br/>Let’s build something great together.</p><a class="contact-link" href="mailto:jovanku1@gmail.com"><span>✉</span> jovanku1@gmail.com <span>↗</span></a><a class="contact-link" href="tel:+6281203742584"><span>↳</span> +62 812-0374-2584 <span>↗</span></a><div class="social-links">{Object.entries(links).filter(([key]) => key !== 'cv').map(([key, url]) => url ? <a href={url} target="_blank" rel="noopener noreferrer">{key === 'linkedin' ? 'LinkedIn' : key === 'github' ? 'GitHub' : 'Discord'} ↗</a> : <span title="Profile link coming soon">{key === 'linkedin' ? 'LinkedIn' : key === 'github' ? 'GitHub' : 'Discord'}<small>Coming soon</small></span>)}</div></div><div class="contact-art"><PhotoFrame><PortfolioImage src={assets.contact.person} alt="Jovan, off the clock" label="REPLACE CONTACT PHOTO" /></PhotoFrame><p class="scribble paper-note">GOOD IDEAS.<br/>BETTER PEOPLE.</p></div></div></div></section>

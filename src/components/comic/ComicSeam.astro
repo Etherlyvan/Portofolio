@@ -1,0 +1,10 @@
+﻿---
+interface Props { variant?: number; }
+const { variant = 0 } = Astro.props;
+const top = variant % 2 ? '0,14 130,23 240,12 370,27 510,18 660,30 820,14 970,25 1100,13 1200,20' : '0,22 130,13 240,24 370,12 510,22 660,9 820,24 970,14 1100,22 1200,12';
+---
+<svg class="comic-seam" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+  <polygon points={`${top} 1200,48 1080,40 930,53 790,42 650,54 510,40 360,52 220,41 100,53 0,44`} fill="#f7f7f5" />
+  <path d="M0 40 160 27 205 35 445 24 420 32 750 21 720 29 1200 18" fill="none" stroke="#ff002b" stroke-width="3" />
+  <path d="M0 15 90 5 170 17 100 26Z M1020 43 1120 30 1200 38 1200 55Z" fill="#ff002b" />
+</svg>

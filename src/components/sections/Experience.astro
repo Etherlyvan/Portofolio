@@ -1,0 +1,21 @@
+---
+import { experience } from '../../data/experience';
+import { assets } from '../../config/assets';
+import ComicLabel from '../comic/ComicLabel.astro';
+import MangaPlaceholder from '../comic/MangaPlaceholder.astro';
+import EditorialEdges from '../comic/EditorialEdges.astro';
+import '../../styles/about-experience.css';
+---
+<section id="experience" class="comic-section experience editorial-experience">
+  <EditorialEdges />
+  <div class="section-inner">
+    <div class="experience-editorial-body">
+      <div class="experience-portrait">
+        <ComicLabel number="02" title="EXPERIENCE" />
+        <MangaPlaceholder src={assets.manga[1]} red />
+      </div>
+      <ol class="timeline">{experience.map(item => <li><div class="timeline-heading"><h3>{item.company}</h3><time>{item.date}</time></div><p>{item.role}</p><ul>{item.points.map(point => <li>{point}</li>)}</ul></li>)}</ol>
+      <p class="scribble experience-note"><span aria-hidden="true">♕</span><br/>BUILD<br/>LEARN<br/>REPEAT</p>
+    </div>
+  </div>
+</section>

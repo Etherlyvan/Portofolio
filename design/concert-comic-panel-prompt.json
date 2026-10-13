@@ -1,0 +1,6 @@
+{
+  "generator": "built-in image_gen",
+  "prompt": "Edit image 1 of the two latest attached images: real concert photo of the young man in a black short sleeved shirt leaning at a stadium railing, looking toward camera. Image 2 is ONLY a style/layout reference showing the website's current monochrome comic sidebar portrait. Create a replacement portrait ASSET, not a website screenshot. Preserve the EXACT identity, face proportions, expression, center-part hair, black shirt and leaning posture of the man from image 1. Crop portrait 3:4 from head to around upper thighs, with comfortable room above hair. Remove the women at far left and right and keep stadium railing and arena subtly in background. Convert to monochrome black and white with restrained ink hatching and light halftone, high detail realistic face, mild comic editorial print look matching image 2. Do not copy identity or smiling pose from image 2. No added red slash, no borders, no text, no logos: the existing website CSS supplies those. Keep face natural, no beautification, no oversized head, no changed clothing.",
+  "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-4eddeb03-de2a-4ee4-97e7-43b3cd58551c.png",
+  "destination": "public/images/manga/concert-panel-v1.webp"
+}

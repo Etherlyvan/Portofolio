@@ -1,0 +1,7 @@
+---
+interface Props { name: string; color: string; }
+const { name, color } = Astro.props;
+const icons: Record<string,string> = { 'Next.js':'nextdotjs',React:'react',TypeScript:'typescript',Python:'python',FastAPI:'fastapi','Node.js':'nodedotjs',PostgreSQL:'postgresql',Docker:'docker',Redis:'redis',RabbitMQ:'rabbitmq',PyTorch:'pytorch','Three.js':'threedotjs','Tailwind CSS':'tailwindcss',Git:'git',Nginx:'nginx' };
+const icon = icons[name];
+---
+<span class="technology-icon" aria-hidden="true" style={`--technology-color:${color};--technology-icon:url('/images/skills/${icon}.svg')`}></span>

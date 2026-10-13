@@ -1,0 +1,5 @@
+---
+interface Props { number: string; title: string; }
+const { number, title } = Astro.props;
+---
+<h2 class="section-heading"><span class="section-number">{number}.</span><span class="paper-label">{title}</span></h2>

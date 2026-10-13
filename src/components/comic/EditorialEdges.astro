@@ -1,0 +1,9 @@
+---
+import { assets } from '../../config/assets';
+import PortfolioImage from '../ui/PortfolioImage.astro';
+---
+<div class="editorial-edges" aria-hidden="true">
+  <div class="editorial-edge editorial-edge-left"><PortfolioImage src={assets.manga[0]} alt="" label="" /></div>
+  <div class="editorial-edge editorial-edge-right"><PortfolioImage src={assets.manga[3]} alt="" label="" /></div>
+  <svg viewBox="0 0 1440 600" preserveAspectRatio="none"><path fill="#ff002b" d="M0 0H210L0 115ZM0 370L160 540H0ZM1440 0H1300L1440 200ZM1440 350L1200 600H1440ZM250 590L400 530L350 600Z"/><path fill="#f7f7f5" d="M0 120L210 0L30 160ZM1440 215L1280 60L1420 240ZM0 560L160 600L45 535Z"/></svg>
+</div>

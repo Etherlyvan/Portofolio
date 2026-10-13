@@ -1,0 +1,13 @@
+﻿---
+const nav = ['Home', 'About', 'Experience', 'Projects', 'Skills', 'Gallery', 'Blog', 'Contact'];
+import { assets } from '../../config/assets';
+---
+<header class="site-header">
+  <a class="brand" href="/#home" aria-label="JP Jovan Prabowo home"><span class="monogram">J<span>P</span></span><span><b>JOVAN</b> PRABOWO</span></a>
+  <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" hidden><span></span><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+  <nav id="primary-nav" aria-label="Main navigation">
+    {nav.map((label, index) => <a style={`--menu-order:${index}`} data-menu-section={label.toLowerCase()} href={label === 'Blog' ? '/blog/' : `/#${label.toLowerCase()}`}><span class="menu-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><span class="menu-label">{label}</span><span class="menu-arrow" aria-hidden="true">↗</span></a>)}
+    <div class="menu-scene" aria-hidden="true"><div class="menu-star"></div><img src={assets.hero.person ?? ''} alt="" width="810" height="1080" /><span class="menu-scene-name">JOVAN<br/>PRABOWO</span><strong class="menu-chapter">HOME</strong><span class="menu-controls">↑ ↓ SELECT &nbsp; ENTER GO &nbsp; ESC CLOSE</span></div>
+  </nav>
+  <a class="nav-cta comic-button" href="/#contact">LET&#8217;S TALK <span>&#8594;</span></a>
+</header>

@@ -1,0 +1,6 @@
+{
+  "generator": "built-in image_gen",
+  "prompt": "Edit image 2 of the two most recent attachments: actual wide night city skyline photograph with dense foreground low-rise rooftops, lit high-rise tower cluster and night sky, tall residential tower far left. Image 1 is ONLY the current website comic sidebar style reference; do not reproduce its Japanese architecture or repeated collaged city. Create a SINGLE coherent vertical 2:3 decorative city illustration for the RIGHT gutter of Gallery. Base buildings, relative skyline shapes and foreground rooftops faithfully on image 2. Recompose/crop central skyline to vertical while retaining characteristic tower cluster and layers of lower rooftops, reduce empty sky. Black and off-white manga ink engraving, strong readable architectural linework, halftone night sky, a few small vivid red window/light accents. No temples, no pagodas, no new landmark towers, no text, no people, no duplicated panels, no repeated wallpaper, no red diagonal slashes or borders (website code adds them). Full bleed rectangular art with one continuous scene, skyline in upper middle, dense rooftops lower portion.",
+  "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-131b8fcd-59a0-4c6b-98ad-817e95fe95d3.png",
+  "destination": "public/images/editorial/gallery-skyline-v1.webp"
+}

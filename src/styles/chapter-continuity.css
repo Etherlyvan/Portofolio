@@ -1,0 +1,105 @@
+﻿/* Comic v3: one content grid, separate art layers, one overlapping seam per chapter. */
+.portfolio-chapters{--gutter:clamp(60px,17vw,330px);position:relative;isolation:isolate;background:#080808;background-image:radial-gradient(#ffffff0b .7px,transparent 1px);background-size:6px 6px}
+.hero-redesign+.portfolio-chapters{margin-top:-100px}
+.hero-redesign+.portfolio-chapters .v2-about{padding-top:115px}
+.portfolio-chapters .editorial-v2,.portfolio-chapters .comic-chapter{position:relative;isolation:isolate;background:transparent;overflow:visible}
+.portfolio-chapters .comic-section{background:transparent;isolation:auto;overflow:clip}
+.portfolio-chapters .v2-city{display:none}
+.portfolio-chapters .editorial-v2:before,.portfolio-chapters .editorial-v2:after{content:'';position:absolute;inset:0 auto 0 0;width:var(--gutter);border:0;z-index:-1;pointer-events:none;background:url('/images/editorial/city-collage.webp') center/cover no-repeat;opacity:.8;mask-image:none;clip-path:polygon(0 0,100% 0,84% 26%,96% 52%,78% 78%,100% 100%,0 100%)}
+.portfolio-chapters .editorial-v2:after{left:auto;right:0;transform:scaleX(-1)}
+.portfolio-chapters .comic-chapter:before{content:'';position:absolute;inset:-12px 0;z-index:-1;pointer-events:none;background-repeat:no-repeat;background-position:left center,right center;background-size:var(--gutter) auto;clip-path:polygon(0 0,18% 0,14% 40%,18% 100%,0 100%,0 0,100% 0,100% 100%,82% 100%,86% 45%,82% 0)}
+.portfolio-chapters .chapter-projects:before{background-image:url('/images/comic-v3/batik-workbench-cut-v1.webp'),url('/images/comic-v3/batik-workbench-cut-v1.webp')}
+.portfolio-chapters .chapter-skills:before{background-image:url('/images/editorial/city-collage.webp'),url('/images/editorial/city-collage.webp');background-size:var(--gutter) 100%;background-position:left top,right bottom}
+.portfolio-chapters .chapter-gallery:before{background-image:url('/images/manga/stadium-front-panel-v1.webp'),url('/images/editorial/gallery-skyline-v1.webp');background-size:var(--gutter) auto,var(--gutter) 100%;background-position:left center,right bottom}
+.portfolio-chapters .chapter-contact:before{background-image:url('/images/editorial/city-collage.webp'),url('/images/manga/concert-panel-v2.webp');background-size:var(--gutter) 100%,var(--gutter) auto;background-position:left top,right center}
+.portfolio-chapters .comic-section:before,.portfolio-chapters .comic-section:after{display:none}
+.portfolio-chapters .comic-chapter:after{content:'';position:absolute;inset:0;pointer-events:none;z-index:-1;background:repeating-linear-gradient(151deg,transparent 0 160px,#ff002b 162px 179px,transparent 181px 360px);clip-path:polygon(0 0,17% 0,9% 35%,17% 100%,0 100%,0 0,100% 0,100% 100%,83% 100%,92% 60%,83% 0)}
+.portfolio-chapters .section-inner,.portfolio-chapters .v2-about,.portfolio-chapters .v2-experience{max-width:1200px;margin-inline:auto;padding:60px 40px 65px}
+.portfolio-chapters .section-top{position:relative;z-index:2;margin-bottom:30px}
+.portfolio-chapters .section-number,.portfolio-chapters .v2-heading>span{font-size:4.8rem}
+.portfolio-chapters .paper-label,.portfolio-chapters .v2-heading>b{font-size:2.5rem;transform:rotate(-4deg)}
+.portfolio-chapters .comic-seam{position:absolute;bottom:-22px;left:0;width:100%;height:52px;z-index:8;pointer-events:none;overflow:visible}
+.portfolio-chapters .about-seam{height:0;position:relative;z-index:8}
+.portfolio-chapters .v2-about{grid-template-columns:1.12fr 1fr;gap:55px;align-items:center}
+.portfolio-chapters .v2-about-content{background:#080808ed;padding:15px 0;clip-path:none}
+.portfolio-chapters .v2-heading{gap:14px;margin-bottom:30px}
+.portfolio-chapters .v2-biography,.portfolio-chapters .v2-details,.portfolio-chapters .v2-cv-row{margin-left:35px}
+.portfolio-chapters .v2-biography p{font-size:1.02rem;line-height:1.6}
+.portfolio-chapters .v2-details{font-size:.88rem;gap:16px 18px}
+.portfolio-chapters .v2-portrait{height:415px;transform:rotate(-4deg);padding:9px;clip-path:polygon(1% 2%,99% 0,100% 98%,0 100%)}
+.portfolio-chapters .v2-portrait img{object-position:center 27%}
+.portfolio-chapters .v2-portrait figcaption{right:-34px;top:-12px;font-size:1.35rem;max-width:155px;transform:rotate(7deg)}
+.portfolio-chapters .v2-experience{grid-template-columns:280px minmax(0,1fr);gap:25px 40px;align-items:start;padding-top:65px;padding-bottom:65px}
+.portfolio-chapters .v2-experience>.v2-heading{grid-column:1;grid-row:1;margin:0;gap:9px}
+.portfolio-chapters .v2-experience .v2-heading>span{font-size:4rem}
+.portfolio-chapters .v2-experience .v2-heading>b{font-size:1.9rem;padding-inline:12px}
+.portfolio-chapters .v2-experience-art{grid-column:1;grid-row:2;padding:0}
+.portfolio-chapters .v2-experience .v2-red-portrait{height:300px;transform:rotate(-4deg);mask-image:none;clip-path:polygon(0 2%,92% 0,100% 83%,87% 100%,0 95%)}
+.portfolio-chapters .v2-experience .v2-timeline{grid-column:2;grid-row:1/span 2;padding:4px 5px 0 30px;background:#080808e8}
+.portfolio-chapters .v2-job-heading{align-items:baseline;gap:15px}
+.portfolio-chapters .v2-job h3{font-size:1.1rem}
+.portfolio-chapters .v2-job p,.portfolio-chapters .v2-job ul{font-size:.88rem}
+.portfolio-chapters .v2-job time{font-size:.8rem;white-space:nowrap}
+.portfolio-chapters .v2-experience .v2-job{padding-bottom:20px;margin-bottom:20px}
+.portfolio-chapters .v2-experience .v2-job:last-child{padding-bottom:0;margin:0}
+.portfolio-chapters .v2-experience .v2-build-note{left:45px;right:auto;bottom:55px;font-size:1rem;transform:rotate(-9deg);padding:10px;background:#080808;color:#f7f7f5;border:3px solid #f7f7f5}
+.portfolio-chapters .projects-concept .filters button,.portfolio-chapters .skills-concept .filters button{padding:11px 15px;font-size:.8rem}
+.portfolio-chapters .project-grid{gap:24px;padding:0}
+.portfolio-chapters .project-card{transform:none!important;box-shadow:4px 5px #000;border:2px solid #e2e2df}
+.portfolio-chapters .project-image{aspect-ratio:1.75}
+.portfolio-chapters .project-copy{padding:16px 15px 32px}
+.portfolio-chapters .project-copy h3{font-size:1.6rem}
+.portfolio-chapters .project-copy p{font-size:.9rem;line-height:1.5}
+.portfolio-chapters .tech-tags{margin:10px 0 13px;gap:5px}
+.portfolio-chapters .tech-tags li{font-size:.75rem;padding:4px 6px}
+.portfolio-chapters .center-action{margin-top:25px}
+.portfolio-chapters .skills-layout{grid-template-columns:minmax(0,1fr) 245px;gap:32px}
+.portfolio-chapters .skill-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}
+.portfolio-chapters .skill-tile{min-height:102px;background:#080808eb;font-size:.8rem;gap:10px}
+.portfolio-chapters .skills-art{transform:rotate(5deg);margin:0;height:330px}
+.portfolio-chapters .skills-art .manga-panel{min-height:0;height:100%;clip-path:polygon(2% 1%,98% 0,100% 97%,0 100%)}
+.portfolio-chapters .skills-art .paper-note{font-size:1.1rem;width:245px;right:-7px;bottom:-6px}
+.portfolio-chapters .gallery .section-inner{padding-top:48px;padding-bottom:50px}
+.portfolio-chapters .gallery-wrap{padding:0 5px}
+.portfolio-chapters .gallery-track{gap:13px;padding:8px 3px 14px}
+.portfolio-chapters .gallery-item{flex:0 0 calc((100% - 52px)/5);margin:0;background:#f7f7f5;border:4px solid #f7f7f5;box-shadow:4px 5px #000;transform:rotate(-1deg)}
+.portfolio-chapters .gallery-item:nth-child(even){transform:rotate(1deg)}
+.portfolio-chapters .gallery-item>img,.portfolio-chapters .gallery-item>.placeholder{height:180px}
+.portfolio-chapters .gallery-item figcaption{position:static;opacity:1;transform:none;background:#f7f7f5;color:#080808;padding:8px 3px;font:italic .8rem Georgia,serif;text-align:center}
+.portfolio-chapters .gallery-arrow{top:80px}
+.portfolio-chapters .gallery-dots{margin-top:6px}
+.portfolio-chapters .contact-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:65px;align-items:center}
+.portfolio-chapters .contact-grid>.manga-panel{display:none}
+.portfolio-chapters .contact-copy{padding:0 0 0 35px;max-width:460px;background:#080808eb}
+.portfolio-chapters .contact-art{width:100%;padding:0;position:relative}
+.portfolio-chapters .contact-art .photo-frame{height:320px;border:9px solid #f7f7f5;transform:rotate(-4deg);clip-path:polygon(1% 2%,99% 0,100% 98%,0 100%)}
+.portfolio-chapters .contact-art .paper-note{right:-35px;top:-35px;font-size:1.2rem;width:160px;transform:rotate(8deg)}
+.portfolio-chapters .contact .section-inner{padding-bottom:85px}
+@media(max-width:1400px) and (min-width:1101px){.portfolio-chapters{--gutter:14vw}.portfolio-chapters .section-inner,.portfolio-chapters .v2-about,.portfolio-chapters .v2-experience{max-width:1040px;padding-inline:45px}.portfolio-chapters .section-number,.portfolio-chapters .v2-heading>span{font-size:4.1rem}.portfolio-chapters .paper-label,.portfolio-chapters .v2-heading>b{font-size:2.1rem}.portfolio-chapters .skills-layout{grid-template-columns:minmax(0,1fr) 210px}}
+@media(max-width:1100px){.portfolio-chapters{--gutter:11vw}.portfolio-chapters .section-inner,.portfolio-chapters .v2-about,.portfolio-chapters .v2-experience{padding-inline:38px}.portfolio-chapters .v2-about{gap:30px}.portfolio-chapters .v2-experience{grid-template-columns:235px minmax(0,1fr);gap:25px}.portfolio-chapters .v2-experience .v2-heading>span{font-size:3.4rem}.portfolio-chapters .v2-experience .v2-heading>b{font-size:1.6rem}.portfolio-chapters .v2-details{grid-template-columns:1fr;gap:10px}.portfolio-chapters .v2-portrait figcaption{right:-15px}.portfolio-chapters .contact-grid{gap:35px}.portfolio-chapters .skills-layout{grid-template-columns:minmax(0,1fr) 190px;gap:20px}.portfolio-chapters .skills-art .paper-note{width:200px;font-size:.95rem}.portfolio-chapters .gallery-item>img{height:145px}}
+@media(max-width:767px){.portfolio-chapters{--gutter:100px}.hero-redesign+.portfolio-chapters{margin-top:-68px}.hero-redesign+.portfolio-chapters .v2-about{padding-top:80px}.portfolio-chapters .section-inner,.portfolio-chapters .v2-about,.portfolio-chapters .v2-experience{padding:44px 22px 55px}.portfolio-chapters .comic-chapter:before,.portfolio-chapters .editorial-v2:before,.portfolio-chapters .editorial-v2:after{opacity:.35}.portfolio-chapters .comic-chapter:after{opacity:.65}.portfolio-chapters .section-number,.portfolio-chapters .v2-heading>span{font-size:3.5rem}.portfolio-chapters .paper-label,.portfolio-chapters .v2-heading>b{font-size:1.8rem}.portfolio-chapters .v2-about{grid-template-columns:1fr;gap:30px}.portfolio-chapters .v2-biography,.portfolio-chapters .v2-details,.portfolio-chapters .v2-cv-row{margin-left:10px}.portfolio-chapters .v2-biography p{font-size:1rem}.portfolio-chapters .v2-details{grid-template-columns:1fr;font-size:.9rem}.portfolio-chapters .v2-portrait{width:min(300px,90%);height:330px}.portfolio-chapters .v2-portrait figcaption{font-size:1.05rem;right:-16px;max-width:120px}.portfolio-chapters .v2-experience{grid-template-columns:1fr;gap:25px;padding-bottom:80px}.portfolio-chapters .v2-experience>.v2-heading{grid-column:1;grid-row:1}.portfolio-chapters .v2-experience-art{grid-column:1;grid-row:2;height:160px}.portfolio-chapters .v2-experience .v2-red-portrait{width:175px;height:170px;margin:0 auto;transform:rotate(-4deg)}.portfolio-chapters .v2-experience .v2-timeline{grid-column:1;grid-row:3;margin-left:10px;padding-left:24px}.portfolio-chapters .v2-experience .v2-build-note{left:auto;right:28px;bottom:18px;font-size:.8rem;padding:6px}.portfolio-chapters .v2-job-heading{display:block}.portfolio-chapters .v2-job time{margin-top:6px}.portfolio-chapters .project-grid{grid-template-columns:1fr;gap:24px}.portfolio-chapters .project-copy p{font-size:1rem}.portfolio-chapters .skills-layout{grid-template-columns:1fr;gap:35px}.portfolio-chapters .skill-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.portfolio-chapters .skills-art{width:220px;height:265px;margin:0 auto 12px}.portfolio-chapters .skills-art .paper-note{width:225px;font-size:1rem}.portfolio-chapters .gallery-item{flex-basis:72%}.portfolio-chapters .gallery-item>img,.portfolio-chapters .gallery-item>.placeholder{height:210px}.portfolio-chapters .gallery-arrow{top:95px}.portfolio-chapters .contact-grid{grid-template-columns:1fr;gap:35px}.portfolio-chapters .contact-copy{padding-left:8px}.portfolio-chapters .contact-art{width:min(300px,90%);margin:auto}.portfolio-chapters .contact-art .photo-frame{height:260px}.portfolio-chapters .contact-art .paper-note{font-size:1rem;width:130px;right:-15px;top:-15px}.portfolio-chapters .comic-seam{height:42px;bottom:-18px}.portfolio-chapters .filters button{min-height:44px}.portfolio-chapters .section-top{gap:24px;flex-wrap:wrap}.portfolio-chapters .section-caption{font-size:.7rem}}
+@media(prefers-reduced-motion:reduce){.portfolio-chapters *{scroll-behavior:auto;transition:none}}
+/* Keep faces and notes fully visible inside the code-generated paper frames. */
+.portfolio-chapters .v2-portrait figcaption{right:8px;top:8px;font-size:1.12rem;padding:10px;transform:rotate(5deg);max-width:145px}
+.portfolio-chapters .contact-art .photo-frame img{object-position:center 18%}
+@media(max-width:767px){.portfolio-chapters .v2-portrait figcaption{font-size:.9rem;max-width:115px;padding:8px}.portfolio-chapters .contact-art .photo-frame img{object-position:center 15%}}
+/* Experience → Projects is a shared collage, rather than two mirrored wallpapers. */
+.portfolio-chapters .chapter-projects{isolation:auto}
+.portfolio-chapters .chapter-projects:before{display:none}
+.portfolio-chapters .editorial-v2:before,.portfolio-chapters .editorial-v2:after{clip-path:polygon(0 0,100% 0,84% 26%,96% 52%,78% 78%,88% 100%,0 100%)}
+.projects-art-bridge{position:absolute;inset:-210px 0 0;pointer-events:none;z-index:-1;background-image:url('/images/editorial/city-collage.webp'),url('/images/editorial/city-collage.webp');background-repeat:no-repeat;background-position:left top,right top;background-size:var(--gutter) 100%;clip-path:polygon(0 0,17% 0,13% 37%,17% 100%,0 100%,0 0,100% 0,100% 100%,83% 100%,87% 35%,83% 0)}
+.projects-art-bridge:before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 0 120px,#08080865 240px,#080808a0 100%)}
+.projects-owner-panel{position:absolute;left:0;top:180px;bottom:20px;width:var(--gutter);background:#ff002b;transform:rotate(-5deg);clip-path:polygon(0 5%,90% 0,100% 72%,84% 100%,0 96%);border:6px solid #f7f7f5}
+.projects-owner-panel img{height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.6);mix-blend-mode:multiply}
+.projects-owner-panel span,.projects-maker-panel span{position:absolute;bottom:30px;left:15px;background:#080808;color:#f7f7f5;border:3px solid #f7f7f5;padding:12px;font:italic clamp(1rem,1.6vw,1.8rem)/1.08 Impact,'Arial Narrow',sans-serif;transform:rotate(-6deg)}
+.projects-maker-panel{position:absolute;right:-20px;top:240px;bottom:0;width:var(--gutter);background:url('/images/comic-v3/batik-workbench-cut-v1.webp') right bottom/100% auto no-repeat;transform:rotate(4deg)}
+.projects-maker-panel span{top:0;bottom:auto;left:25px;transform:rotate(6deg)}
+.portfolio-chapters .editorial-v2>.comic-seam{clip-path:polygon(15% 0,85% 0,85% 100%,15% 100%)}
+.portfolio-chapters .chapter-projects:after{background:linear-gradient(150deg,transparent 0 8%,#ff002b 8% 10%,transparent 10% 88%,#ff002b 88% 91%,transparent 91%);opacity:.8}
+@media(max-width:1100px){.projects-owner-panel span,.projects-maker-panel span{font-size:1rem;padding:8px}.projects-maker-panel span{left:10px}.projects-owner-panel{opacity:.65}}
+@media(max-width:767px){.projects-art-bridge{inset:-80px 0 0;opacity:.45;clip-path:polygon(0 0,9% 0,6% 40%,9% 100%,0 100%,0 0,100% 0,100% 100%,91% 100%,94% 40%,91% 0)}.projects-owner-panel{top:70px;left:-35px;width:125px;bottom:0}.projects-maker-panel{top:130px;right:-45px;width:140px}.projects-owner-panel span,.projects-maker-panel span{display:none}.portfolio-chapters .editorial-v2>.comic-seam{clip-path:none}}
+/* Landscape concert portrait: keep the whole head inside the contact paper frame. */
+.portfolio-chapters .contact-art .photo-frame img{object-position:center center}
+
+/* Beachside About photo: show the face and coffee pose in the landscape frame. */
+.portfolio-chapters .v2-portrait img{object-position:center center}

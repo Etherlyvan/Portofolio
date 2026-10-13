@@ -1,0 +1,1 @@
+@keyframes panel-enter{from{opacity:.5;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}[data-reveal]{animation:panel-enter .5s ease both}.gallery-track{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html,.gallery-track{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}

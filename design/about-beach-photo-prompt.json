@@ -1,0 +1,6 @@
+{
+  "generator": "built-in image_gen",
+  "prompt": "Edit FIRST of the two latest attached images: actual square photo of man in black T shirt sitting at a beachside cafe at dusk, looking to image right, holding white coffee cup, thin chain bracelet on wrist, water and illuminated waterfront architecture behind him. SECOND image is only the old website About Me photo frame to replace; do not use old suit portrait or add any text/frame. Produce a clean 4:3 photographic asset based faithfully on FIRST photo. Preserve exact facial identity, hairstyle, expression, pose, black shirt, hands, cup and thin bracelet. Retain natural warm lighting, blue dusk water and cafe structure, lightly expand background if needed for landscape composition. Full head and shoulders visible with generous room above hair; keep torso, forearms and coffee cup visible. No beautification, no changed head size, no suit, no watch, no illustrated style, no logos or overlays. The existing website supplies the white frame.",
+  "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-b7ccabd1-f4f8-4fb9-b015-02629dde82e8.png",
+  "destination": "public/images/about-beach-v1.webp"
+}

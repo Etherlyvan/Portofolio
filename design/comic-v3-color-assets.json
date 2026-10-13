@@ -1,0 +1,54 @@
+{
+  "generator": "built-in image_gen",
+  "notice": "Illustrative placeholders, not actual screenshots or personal travel evidence",
+  "assets": [
+    {
+      "name": "project-batikpedia",
+      "prompt": "Natural color editorial photograph of a modern Indonesian batik museum interior, warm amber ceiling lights, framed textile exhibits, quiet visitors, polished wooden floor, realistic wide-angle architecture. Wide 16:9 thumbnail. No words, watermarks, comic effects or red-black color grading.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-748e469d-2e77-47d8-8638-63ce4a151e0e.png",
+      "destination": "public/images/comic-v3/project-batikpedia.webp"
+    },
+    {
+      "name": "project-genbatik",
+      "prompt": "Colorful Indonesian batik textile patterns in turquoise, amber, rust and blue, sophisticated floral geometric motifs surrounding a small laptop displaying a clean white image generation interface with an abstract batik preview, no legible words. Wide 16:9 editorial project concept thumbnail, natural colors, no red-black monochrome treatment.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-2229ecce-8541-4075-8b92-730e08622b9f.png",
+      "destination": "public/images/comic-v3/project-genbatik.webp"
+    },
+    {
+      "name": "project-raho",
+      "prompt": "Close angled view of a desktop monitor displaying a clean white ERP dashboard with blue and teal accents, small charts, a table and status badges, realistic modern office desk, soft blue ambient lighting. No readable branding or fake specific metrics, no red-black monochrome treatment. Wide 16:9 project concept thumbnail.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-743c6982-f492-4ec7-9453-2e8599fb1947.png",
+      "destination": "public/images/comic-v3/project-raho.webp"
+    },
+    {
+      "name": "gallery-01",
+      "prompt": "Natural color travel photography of Jakarta skyline at blue hour with an illuminated landmark tower and city lights reflecting in water, calm evening, realistic rich blue and warm gold, no text, 4:3.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-61f72b59-25c4-4223-b59a-7451ae5127f9.png",
+      "destination": "public/images/comic-v3/gallery-01.webp"
+    },
+    {
+      "name": "gallery-02",
+      "prompt": "Natural color travel photography of East Java volcanic mountains from a scenic overlook, hazy morning sun, rolling green foreground, blue layered mountains, warm earthy slopes, no people no text, 4:3.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-e9dfbeec-c9a7-4743-a015-6af9c590ad5e.png",
+      "destination": "public/images/comic-v3/gallery-02.webp"
+    },
+    {
+      "name": "gallery-03",
+      "prompt": "Natural color travel photography of a quiet traditional Indonesian city street with historic architecture and a leafy tree, warm afternoon sunlight, realistic details, no legible signage or text, 4:3.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-1aa2a7ab-916a-468c-b335-f28d71c04e86.png",
+      "destination": "public/images/comic-v3/gallery-03.webp"
+    },
+    {
+      "name": "gallery-04",
+      "prompt": "Natural color travel photography of vermilion torii gates on a Japanese forest walking path, soft sunlight through lush green leaves, realistic travel editorial photo, no words, 4:3.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-716f87da-9821-4962-8c9b-0d82a802ced7.png",
+      "destination": "public/images/comic-v3/gallery-04.webp"
+    },
+    {
+      "name": "gallery-05",
+      "prompt": "Natural color travel photography of a tropical Indonesian coastal bay at sunset, island silhouettes, warm peach clouds and blue ocean reflections, serene realistic editorial photo, no people no text, 4:3.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-5b4d08bd-6b61-4145-8676-fb4ec59d943a.png",
+      "destination": "public/images/comic-v3/gallery-05.webp"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "generator": "built-in image_gen",
+  "reference": "Second user-attached concert photo",
+  "prompt": "Edit the most recent attached user photo: the young man in a black open short sleeve shirt over a black T shirt and gray jeans leaning on white railing at an indoor concert, with blue light beams and blurry passersby on both sides. Produce a landscape 4:3 website contact-section photographic asset. Preserve EXACT same man's facial identity, natural facial proportions, hairstyle, skin texture, expression looking to image right, black clothes and leaning posture. Keep photographic realism, not illustration. Frame waist-up, subject center, full head and shoulders clearly visible with comfortable space above hair. Remove the two blurry foreground passersby at image left and right; reconstruct arena background naturally. Keep actual arena, white railing, concert stage blue lighting and warm audience seating atmosphere. Expand or crop background only as necessary for landscape framing. Do not beautify or change face, do not enlarge head, do not change clothing or pose. No text, no frame, no logos, no new people in foreground. This will be placed into an existing HTML white paper frame; deliver just the photo.",
+  "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-767f62e2-53d8-4a24-bb39-d7ca5ab1f243.png",
+  "destination": "public/images/contact-concert-v1.webp"
+}

@@ -1,0 +1,6 @@
+/* Transparent portrait retains the existing paper silhouette frame. */
+.hero-portrait img{object-fit:contain;object-position:center bottom;background:#050505}
+.manga-panel img{filter:grayscale(1);object-position:center top}
+.manga-panel--red img{filter:grayscale(1);mix-blend-mode:multiply}
+.manga-panel--red{background:var(--red)}
+.about-art img{object-position:center top}

@@ -1,0 +1,7 @@
+---
+import { gallery } from '../../data/gallery';
+import { assets } from '../../config/assets';
+import ComicLabel from '../comic/ComicLabel.astro';
+import PortfolioImage from '../ui/PortfolioImage.astro';
+---
+<section id="gallery" class="comic-section gallery"><div class="section-inner"><div class="section-top"><ComicLabel number="05" title="GALLERY" /><p class="section-caption">OFF THE CLOCK. INTO THE WORLD.</p></div><div class="gallery-wrap"><button class="gallery-arrow previous" aria-label="Previous gallery image" hidden>‹</button><div class="gallery-track" tabindex="0" aria-label="Photo gallery; scroll to explore">{gallery.map((caption, index) => <figure class="gallery-item"><PortfolioImage src={assets.gallery[index] ?? null} alt={caption} label={`GALLERY ${String(index + 1).padStart(2, '0')}`} variant={`gallery gallery-${index}`} width={600} height={400} /><figcaption>{caption}</figcaption></figure>)}</div><button class="gallery-arrow next" aria-label="Next gallery image" hidden>›</button></div><div class="gallery-dots" aria-label="Choose gallery image" hidden>{gallery.map((_, index) => <button data-slide={index} aria-label={`Go to gallery image ${index + 1}`} aria-pressed={index === 0}></button>)}</div></div></section>

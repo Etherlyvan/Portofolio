@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    build:
+      context: .
+      args:
+        SITE_URL: ${SITE_URL:-http://localhost:8080}
+    ports:
+      - "${PORTFOLIO_PORT:-8080}:80"
+    restart: unless-stopped

@@ -1,0 +1,19 @@
+{
+  "generator": "Built-in image_gen",
+  "concept": {
+    "prompt": "Use case: ui-mockup. Create a high fidelity tall desktop portfolio webpage concept showing SIX consecutive sections, no hero or navbar: 01 ABOUT ME, 02 EXPERIENCE, 03 PROJECTS, 04 SKILLS, 05 GALLERY, 06 LET'S TALK. Reference 1 is the actual owner's portrait; preserve that face in About and Contact, normal head/body proportions. Reference 2 is comic visual style, use its tightly joined paper-cut composition. Black charcoal, vivid red #ff002b, off-white paper, halftone, manga ink. Realistically implementable with Astro HTML CSS grids and SVG polygon dividers: consistent central content width, readable horizontal text, modest tilted white title labels, red section numbers, clear white paper cuts connecting sections flush with ZERO empty black gaps. Decorative artwork confined to side gutters and a few frames, alternating DIFFERENT scenes (urban architecture, developer workbench, circuitry, travel sketch), not repeated wallpaper. About: text left, white bordered portrait right. Experience: small red ink side profile left, clean three-entry timeline right RAHO Premier / Sekawan Media / Genbatik. Projects: three equal white cards with colored natural thumbnails Batikpedia museum, Genbatik fabric, RAHO ERP dashboard; category tabs. Skills: 5 by 3 simple colored technology logos left, manga coder drawing right. Gallery: five travel photos in single horizontal row. Let's Talk: contact links left and portrait frame right. Persona: Indonesian software engineer, curious builder, batik culture, urban traveller. Dense but organized comic collage, decorative asymmetrical red slashes and torn white paper seams; preserve comic cut feeling rather than generic rectangular sections. No extreme rotated content, no complex baked-in layout impossible to code. Tall full-page image, all six sections visible with enough breathing room within each section.",
+    "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-87e19fc0-73d8-4462-8da7-fcccf6bbf530.png"
+  },
+  "generatedAssets": [
+    {
+      "name": "batik-workbench-cut-v1",
+      "prompt": "Use case: illustration-story. Asset type: transparent decorative comic cutout for sides of an Astro portfolio Projects section. A tall narrow diagonal paper collage strip: hand drawn developer keyboard, open sketchbook with Indonesian batik floral line drawings, stylus, coffee cup, laptop corner. Manga ink black and off white, red #ff002b accents, halftone and rough torn-paper edges. No human faces, no letters, no UI, no border rectangle. Composition vertical 1:3, organic torn cutout silhouette with true transparent surrounding background. Rich hand drawn details, restrained red slashes; easy to place as one img behind HTML cards. All artwork fully inside canvas.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-bc381fae-a9e7-4e83-b848-66aca86c4841.png"
+    },
+    {
+      "name": "circuit-travel-cut-v1",
+      "prompt": "Use case: illustration-story. Asset type: transparent decorative comic cutout for Skills to Gallery transition in Astro portfolio. Tall narrow irregular torn paper illustration collage: circuit boards and cables near top evolving to a camera, folded urban travel map without text, small Japanese torii silhouette near bottom. Black ink, off-white paper, sparse vivid red #ff002b, halftone manga engraving. No people, no text, no logos, no website screenshot. True transparent surroundings, organic paper cut edge silhouette, entire artwork inside canvas, vertical 1:3. Detailed but legible decorative artwork suitable beside HTML skill tiles and travel photos.",
+      "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-8b09bb10-4af3-4b7d-8371-465bcf7bd873.png"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "generator": "built-in image_gen",
+  "prompt": "Edit FIRST image of the two newest user attachments: actual portrait of young Indonesian man with center-part dark hair, black short-sleeved open shirt over black T shirt, arms crossed, facing camera outside concert venue, jeans, night crowd and illuminated architecture. SECOND image is only old website monochrome hoodie portrait style reference to REPLACE, never copy its face or pose. Create portrait 3:4 photographic comic asset, framing head to hips, entire crossed arms visible and comfortable space above head. Preserve EXACT identity, natural face, neutral expression, hairstyle, clothes, crossed arm pose and body proportions from FIRST image. Black and white mild ink hatching and halftone with realistic face, same visual style as SECOND image. Keep venue background recognizable but subdued behind subject. No new watches or accessories, no beautification, no head enlargement, no changing hands or pose. No frames, red slashes or overlay text; website code supplies frame. Output standalone portrait asset.",
+  "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-132a9249-40f9-4615-861c-ed4bff177b92.png",
+  "destination": "public/images/manga/arms-crossed-panel-v1.webp"
+}

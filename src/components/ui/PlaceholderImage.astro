@@ -1,0 +1,13 @@
+---
+interface Props { label: string; variant?: string; }
+const { label, variant = 'portrait' } = Astro.props;
+---
+<div class:list={['placeholder', `placeholder--${variant}`]} role="img" aria-label={label}>
+  <svg class="placeholder-art" viewBox="0 0 400 480" aria-hidden="true">
+    <path class="art-rays" d="M200 250 0 0 70 0ZM200 250 400 0 350 0ZM200 250 0 400 0 480ZM200 250 400 480 400 350Z" />
+    <g class="person-art"><path class="shoulders" d="M48 480Q45 369 133 345L150 307 248 307 266 345Q363 368 360 480Z"/><path class="neck" d="M161 278 159 340Q204 374 243 340L238 274Z"/><path class="face" d="M128 163Q133 86 207 87Q283 95 275 191L264 265 219 310 176 295 139 244Z"/><path class="hair" d="M128 200 107 150 129 111 111 91 157 96 158 62 186 80 220 53 231 79 278 83 297 127 274 180 255 145 228 132 188 158 161 145 142 211Z"/><path class="ink-line" d="m162 211 24-5m37-3 27 4m-44 3-6 32 12 3m-25 25 37 0M154 359l46 70 51-69"/></g>
+    <g class="landscape-art"><path d="M0 480V260H35V205H70V300H100V180H135V240H170V110H190V70H205V110H225V280H255V215H290V290H325V190H365V250H400V480Z"/><path class="ink-line" d="M0 330 400 330M0 380 400 380M170 145h55M180 180h35M180 210h35"/></g>
+    <g class="project-art"><path d="M44 105H355V347H44Z"/><path class="ink-line" d="M44 150H355M75 187h80M75 215h80M75 243h80M185 182h138v124H185ZM108 385h183M199 347v38"/></g>
+  </svg>
+  <span class="placeholder-label">{label}</span><span class="placeholder-corner" aria-hidden="true">↗</span>
+</div>

@@ -1,0 +1,5 @@
+---
+interface Props { href?: string; secondary?: boolean; disabled?: boolean; }
+const { href, secondary = false, disabled = false } = Astro.props;
+---
+{href ? <a href={href} class:list={['comic-button', { secondary }]}><slot /></a> : <button class:list={['comic-button', { secondary }]} disabled={disabled}><slot /></button>}
