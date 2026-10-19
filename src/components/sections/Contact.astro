@@ -1,8 +1,60 @@
 ---
 import { assets, links } from '../../config/assets';
-import ComicLabel from '../comic/ComicLabel.astro';
-import PhotoFrame from '../comic/PhotoFrame.astro';
-import MangaPlaceholder from '../comic/MangaPlaceholder.astro';
 import PortfolioImage from '../ui/PortfolioImage.astro';
+import '../../styles/contact-persona.css';
+
+const socialLabels = { linkedin: 'LinkedIn', github: 'GitHub', discord: 'Discord' } as const;
+const socialLinks = Object.entries(links)
+  .filter(([key, url]) => key !== 'cv' && Boolean(url))
+  .map(([key, url]) => ({ label: socialLabels[key as keyof typeof socialLabels], url: url as string }));
 ---
-<section id="contact" class="comic-section contact"><div class="section-inner"><ComicLabel number="06" title="LET’S TALK" /><div class="contact-grid"><MangaPlaceholder src={assets.manga[3]} /><div class="contact-copy"><p>Have a project in mind?<br/>Let’s build something great together.</p><a class="contact-link" href="mailto:jovanku1@gmail.com"><span>✉</span> jovanku1@gmail.com <span>↗</span></a><a class="contact-link" href="tel:+6281203742584"><span>↳</span> +62 812-0374-2584 <span>↗</span></a><div class="social-links">{Object.entries(links).filter(([key]) => key !== 'cv').map(([key, url]) => url ? <a href={url} target="_blank" rel="noopener noreferrer">{key === 'linkedin' ? 'LinkedIn' : key === 'github' ? 'GitHub' : 'Discord'} ↗</a> : <span title="Profile link coming soon">{key === 'linkedin' ? 'LinkedIn' : key === 'github' ? 'GitHub' : 'Discord'}<small>Coming soon</small></span>)}</div></div><div class="contact-art"><PhotoFrame><PortfolioImage src={assets.contact.person} alt="Jovan, off the clock" label="REPLACE CONTACT PHOTO" /></PhotoFrame><p class="scribble paper-note">GOOD IDEAS.<br/>BETTER PEOPLE.</p></div></div></div></section>
+<section id="contact" class="contact-persona" aria-labelledby="contact-title">
+  <div class="contact-persona__inner">
+    <header class="contact-persona__heading">
+      <h2 id="contact-title"><span>06.</span><strong>LET’S TALK</strong></h2>
+    </header>
+
+    <div class="contact-persona__prompt">
+      <strong>HAVE A PROJECT IN MIND?</strong>
+      <span>LET’S BUILD SOMETHING GREAT TOGETHER.</span>
+    </div>
+
+    <div class="contact-persona__menu">
+      <p class="contact-persona__instruction"><span>CHOOSE YOUR MOVE</span></p>
+      <nav class="contact-persona__commands" aria-label="Contact options">
+        <a class="contact-persona__command contact-persona__command--primary" href="mailto:jovanku1@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5Zm2 2v.2l7 5.1 7-5.1V7H5Zm14 10V9.7l-7 5.1-7-5.1V17h14Z"/></svg>
+          <span><strong>EMAIL ME</strong><small>jovanku1@gmail.com</small></span>
+          <i aria-hidden="true">➜</i>
+        </a>
+        <a class="contact-persona__command" href="tel:+6281203742584">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6.6 2 3 4.8-2 2.4c1.3 2.6 3.4 4.7 6 6l2.4-2 4.8 3c.3.2.5.6.4 1l-.8 3.8c-.1.6-.6 1-1.2 1C9.7 22 2 14.3 2 4.8c0-.6.4-1.1 1-1.2l3.6-.8Z"/></svg>
+          <span><strong>CALL ME</strong><small>+62 812-3374-2584</small></span>
+          <i aria-hidden="true">➜</i>
+        </a>
+        <a class="contact-persona__command contact-persona__command--paper" href="mailto:jovanku1@gmail.com?subject=Let%27s%20build%20something%20great">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm2 6v3h3V9H6Zm5 0v3h3V9h-3Zm5 0v3h3V9h-3Z"/></svg>
+          <span><strong>START A CONVERSATION</strong><small>Tell me what you’re building</small></span>
+          <i aria-hidden="true">➜</i>
+        </a>
+      </nav>
+
+      {socialLinks.length > 0 && <nav class="contact-persona__socials" aria-label="Social profiles">
+        {socialLinks.map(item => <a href={item.url} target="_blank" rel="noopener noreferrer"><span>{item.label}</span><b aria-hidden="true">↗</b></a>)}
+      </nav>}
+    </div>
+
+    <div class="contact-persona__stage">
+      <div class="contact-persona__slashes" aria-hidden="true"></div>
+      <div class="contact-persona__crowd" aria-hidden="true"><PortfolioImage src={assets.manga[3]} alt="" label="CONCERT CROWD" width={520} height={240} /></div>
+      <figure class="contact-persona__photo">
+        <PortfolioImage src={assets.contact.person} alt="Jovan at a concert venue" label="JOVAN AT A CONCERT" width={1200} height={900} />
+      </figure>
+      <p class="contact-persona__quote">GOOD IDEAS.<br />BETTER PEOPLE.</p>
+      <p class="contact-persona__availability">AVAILABLE FOR<br />THE NEXT BUILD</p>
+      <span class="contact-persona__spark contact-persona__spark--one" aria-hidden="true">✦</span>
+      <span class="contact-persona__spark contact-persona__spark--two" aria-hidden="true">✦</span>
+    </div>
+  </div>
+</section>
+<script>import '../../scripts/contact-persona';</script>

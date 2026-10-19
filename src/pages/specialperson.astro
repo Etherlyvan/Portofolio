@@ -1,0 +1,51 @@
+---
+import { specialMessages } from '../data/special-person';
+import '../styles/special-person.css';
+---
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#080808" />
+  <title>Buat Kamu — Jovan</title>
+  <meta name="description" content="Satu halaman kecil. Buat orang yang berarti." />
+  <link rel="icon" href="/favicon.svg" />
+  <script is:inline>document.documentElement.classList.add('special-js');</script>
+ </head>
+ <body>
+  <a class="special-skip" href="#secret-message">Langsung ke pesan</a>
+  <div class="secret-wipe" aria-hidden="true"></div>
+  <header class="secret-header"><a class="secret-brand" href="/" aria-label="Kembali ke portfolio Jovan"><b>J<span>P</span></b><span>JOVAN<br/>PRABOWO</span></a><a class="secret-back" href="/">Kembali ke portfolio <span aria-hidden="true">↗</span></a></header>
+  <main class="secret-page" data-state="closed">
+   <div class="secret-intro">
+    <p class="secret-eyebrow">SECRET CHAPTER / 01</p>
+    <h1><span>BUAT</span> <em>KAMU.</em></h1>
+    <p class="secret-description">Ada pesan kecil yang sengaja<br class="desktop-break"/> kusimpan di sini.</p>
+    <p class="secret-recipient"><span aria-hidden="true">✦</span> Untuk orang spesial</p>
+    <div class="secret-actions" hidden><button class="secret-open" type="button" aria-controls="secret-message">Buka pesan <span aria-hidden="true">↗</span></button><button class="secret-save" type="button" hidden>Simpan momen <span aria-hidden="true">↓</span></button></div>
+    <p class="secret-hint" aria-live="polite">Satu halaman kecil. Buat orang yang berarti.</p>
+   </div>
+   <div class="secret-stage">
+    <span class="secret-star secret-star--one" aria-hidden="true">✦</span><span class="secret-star secret-star--two" aria-hidden="true">✧</span><span class="secret-star secret-star--three" aria-hidden="true">✦</span>
+    <div class="secret-envelope">
+     <div class="envelope-back" aria-hidden="true"></div>
+     <article id="secret-message" class="secret-letter" aria-label="Pesan dari Jovan" tabindex="-1">
+      <span class="letter-spark" aria-hidden="true">♡</span>
+      <p class="letter-message" data-letter-message>{specialMessages.special.message}</p>
+      <span class="letter-underline" aria-hidden="true"></span>
+      <p class="letter-note" data-letter-note>{specialMessages.special.note}</p>
+      <p class="letter-signature">— Jovan</p>
+     </article>
+     <div class="envelope-flap" aria-hidden="true"></div>
+     <div class="envelope-front" aria-hidden="true"><span class="envelope-fold envelope-fold--left"></span><span class="envelope-fold envelope-fold--right"></span></div>
+     <button class="envelope-seal" type="button" aria-label="Buka amplop pesan" aria-controls="secret-message" hidden><span aria-hidden="true">✦</span></button>
+    </div>
+    <p class="secret-side-note" aria-hidden="true">SIMPLE WORDS.<br/>GOOD COMPANY.</p>
+   </div>
+  </main>
+  <footer class="secret-footer"><span>GOOD PEOPLE.<br/>BRIGHTER DAYS.</span><p>Satu halaman kecil. Buat orang yang berarti.</p></footer>
+  <script>import '../scripts/special-person';</script>
+ </body>
+</html>

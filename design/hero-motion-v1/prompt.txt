@@ -1,0 +1,6 @@
+Use case: ui-mockup
+Asset type: 16:9 four-frame motion storyboard for an Astro portfolio Hero
+Primary request: show the existing Hero assembling through a red diagonal wipe, side-panel slam, paper-block name reveal, character impact, then a clean settled final state at 1.65 seconds.
+Frames: `01 / 0.00s`, `02 / 0.35s`, `03 / 0.85s`, `04 / 1.65s`.
+Motion language: original kinetic manga editorial collage, quick cubic-bezier slam, small overshoot, controlled white/red impact flash, code-feasible CSS transforms and clip-path.
+Constraints: preserve Jovan’s existing face, bomber-jacket portrait, text, assets, palette, and final Hero layout; no redesign, no audio, no copied game branding, no random Japanese text, no repeated flashing, no giant head, no duplicated main portrait, no watermark.

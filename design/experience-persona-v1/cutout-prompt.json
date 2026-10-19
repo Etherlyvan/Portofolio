@@ -1,0 +1,6 @@
+{
+  "generator": "built-in image_gen",
+  "prompt": "Background extraction only for website character cutout. Keep EXACT monochrome man from reference: natural facial identity, serious expression, center-part hair, leaning posture, black short sleeve open shirt, gray jeans, thin plain bracelet (NOT watch). Remove ALL stadium/background/crowd and railing. Bent elbow/forearm and hanging hand must remain in exactly the same position, even without railing. Cutout head through upper thighs. Entire face and arms visible. Genuine transparent background, minimal padding, detailed hair edges. Do not add frame or white outline, no retouching/beautification, do not change anatomy/pose/clothes. Preserve original ink/halftone texture.",
+  "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-bb5c1fbb-a860-462d-b8e7-7b452e6f4180.png",
+  "destination": "public/images/experience-persona/jovan-cutout.webp"
+}

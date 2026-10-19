@@ -1,7 +1,6 @@
+﻿const descriptions: Record<string, string> = {
+ 'Next.js':'React applications with routing and server rendering.',React:'Component-based interfaces.',TypeScript:'Typed JavaScript for maintainable applications.',Python:'Automation, backend services, and AI workflows.',FastAPI:'Typed Python APIs and backend services.','Node.js':'JavaScript services and asynchronous applications.',PostgreSQL:'Relational data and structured queries.',Docker:'Portable application containers.',Redis:'In-memory caching and data storage.',RabbitMQ:'Message queues and asynchronous processing.',PyTorch:'Deep learning models and AI experimentation.','Three.js':'Interactive 3D experiences in the browser.','Tailwind CSS':'Utility-based interface styling.',Git:'Version control and collaborative development.',Nginx:'Web serving and reverse proxy routing.'
+};
 export const skills = [
-  ['Next.js', 'frontend', 'N', '#ffffff'], ['React', 'frontend', '⚛', '#00cce8'], ['TypeScript', 'frontend', 'TS', '#3178c6'],
-  ['Python', 'backend', 'Py', '#ffd447'], ['FastAPI', 'backend', 'ϟ', '#00c9b4'], ['Node.js', 'backend', 'JS', '#81bd00'],
-  ['PostgreSQL', 'backend', 'PG', '#6a9fc8'], ['Docker', 'tools', '▤', '#00a7e5'], ['Redis', 'backend', '▱', '#ff3544'],
-  ['RabbitMQ', 'backend', 'R', '#ff661c'], ['PyTorch', 'ai', '◉', '#ee314c'], ['Three.js', 'frontend', '△', '#ffffff'],
-  ['Tailwind CSS', 'frontend', '≈', '#00c6ed'], ['Git', 'tools', '◇', '#fa5839'], ['Nginx', 'other', 'N', '#00b650'],
-].map(([name, category, mark, color]) => ({ name, category, mark, color }));
+ ['Next.js','frontend','#ffffff'],['React','frontend','#00cce8'],['TypeScript','frontend','#3178c6'],['Python','backend','#ffd447'],['FastAPI','backend','#00c9b4'],['Node.js','backend','#81bd00'],['PostgreSQL','backend','#6a9fc8'],['Docker','tools','#00a7e5'],['Redis','backend','#ff3544'],['RabbitMQ','backend','#ff661c'],['PyTorch','ai','#ee314c'],['Three.js','frontend','#ffffff'],['Tailwind CSS','frontend','#00c6ed'],['Git','tools','#fa5839'],['Nginx','other','#00b650']
+].map(([name,category,color])=>({id:name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-$/,''),name,category,color,description:descriptions[name]}));

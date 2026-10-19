@@ -1,0 +1,4 @@
+Generator: built-in image_gen
+Use case: background-extraction
+
+Use the newly supplied stadium concert photograph as the only edit target. Extract only the central young man and remove the stadium, railing, crowd, ceiling, lights, and partial person on the left. Preserve the exact real face, joyful open-mouth expression, visible tongue, hairstyle, both raised rock-hand gestures, black T-shirt, open black overshirt, watch, wristbands, concert wristband, skin tone, body proportions, and visible clothing. Produce one centered photographic cutout with clean edges around the hair, fingers, hands, sleeves, and clothing on a genuinely transparent background. Keep natural photographic texture and lighting. Do not add a comic filter, white outline, shadow, typography, watermark, new accessories, a jacket, extra fingers, or a different pose.

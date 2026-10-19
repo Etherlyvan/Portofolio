@@ -1,21 +1,17 @@
 ---
 import { experience } from '../../data/experience';
-import { assets } from '../../config/assets';
-import ComicLabel from '../comic/ComicLabel.astro';
-import MangaPlaceholder from '../comic/MangaPlaceholder.astro';
-import EditorialEdges from '../comic/EditorialEdges.astro';
-import '../../styles/about-experience.css';
+import '../../styles/experience-persona.css';
 ---
-<section id="experience" class="comic-section experience editorial-experience">
-  <EditorialEdges />
-  <div class="section-inner">
-    <div class="experience-editorial-body">
-      <div class="experience-portrait">
-        <ComicLabel number="02" title="EXPERIENCE" />
-        <MangaPlaceholder src={assets.manga[1]} red />
-      </div>
-      <ol class="timeline">{experience.map(item => <li><div class="timeline-heading"><h3>{item.company}</h3><time>{item.date}</time></div><p>{item.role}</p><ul>{item.points.map(point => <li>{point}</li>)}</ul></li>)}</ol>
-      <p class="scribble experience-note"><span aria-hidden="true">♕</span><br/>BUILD<br/>LEARN<br/>REPEAT</p>
-    </div>
+<section id="experience" class="experience-persona" aria-labelledby="experience-title">
+ <div class="experience-persona__inner">
+  <header class="experience-persona__heading"><h2 id="experience-title"><span>02.</span> EXPERIENCE</h2><p>MY JOURNEY / BUILD. LEARN. REPEAT.</p></header>
+  <div class="experience-persona__choices" role="tablist" aria-label="Career chapters" aria-orientation="vertical" hidden>{experience.map((item,index)=><button type="button" role="tab" id={`career-tab-${index}`} aria-controls={`career-panel-${index}`} aria-selected={index===0} tabindex={index===0?0:-1} data-career-index={index}><span class="experience-persona__number">{String(index+1).padStart(2,'0')}</span><span><strong>{item.company}</strong><small>{item.date}</small></span><i aria-hidden="true"></i></button>)}</div>
+  <div class="experience-persona__panels">{experience.map((item,index)=><article id={`career-panel-${index}`} class="experience-persona__panel" data-career-panel data-career-index={index} role="tabpanel" aria-labelledby={`career-tab-${index}`} tabindex="0"><div class="experience-persona__panel-copy"><h3>{item.company}</h3><p class="experience-persona__role">{item.role}</p><time>{item.date}</time><ul>{item.points.map(point=><li>{point}</li>)}</ul><ul class="experience-persona__tags" aria-label="Focus areas">{item.tags.map(tag=><li>{tag}</li>)}</ul></div></article>)}</div>
+  <div class="experience-persona__stage" data-career-stage data-theme={experience[0].theme} aria-live="off">
+   <svg class="experience-persona__burst" viewBox="0 0 500 760" preserveAspectRatio="none" aria-hidden="true"><path fill="#ff002b" d="M50 0 160 130 210 0 260 180 500 0 395 300 500 220 430 450 500 560 390 580 500 760 0 760 85 565 0 610 120 405 0 370 100 250 0 0Z"/><path fill="#f7f7f5" d="m80 0 165 365-100-170ZM500 60 280 360 365 180ZM500 760 265 500 400 585Z"/></svg>
+   <div class="experience-persona__visuals">{experience.map((item,index)=><figure class="experience-persona__visual" data-career-visual data-career-index={index} data-theme={item.theme} data-state={index===0?'active':'idle'} aria-hidden={index!==0} style={`--experience-position:${item.imagePosition};`}><div class="experience-persona__photo"><img src={item.image} alt={item.imageAlt} width="900" height="1200" loading="eager" decoding="async"/><i class="experience-persona__photo-ink" aria-hidden="true"></i></div><figcaption>{item.visualCaption}</figcaption></figure>)}</div>
+   <div class="experience-persona__switch-slash" aria-hidden="true"><span>NEXT CASE</span><strong data-career-transition-label>{experience[0].company}</strong><i></i></div>
   </div>
+ </div>
 </section>
+<script>import '../../scripts/experience-persona';</script>

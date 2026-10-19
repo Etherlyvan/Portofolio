@@ -3,13 +3,20 @@ import { assets } from '../../config/assets';
 import PortfolioImage from '../ui/PortfolioImage.astro';
 import ComicButton from '../ui/ComicButton.astro';
 import '../../styles/hero.css';
+import '../../styles/hero-motion.css';
 ---
-<section id="home" class="hero-redesign comic-section" aria-labelledby="hero-title">
+<script is:inline>
+  document.documentElement.classList.add('hero-motion-enabled');
+  window.setTimeout(() => document.documentElement.classList.remove('hero-motion-enabled'), 2600);
+</script>
+<section id="home" class="hero-redesign comic-section" aria-labelledby="hero-title" data-hero-motion>
   <svg class="hero-filter-defs" width="0" height="0" aria-hidden="true">
     <defs><filter id="hero-cutout-outline" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="smooth-alpha"/><feMorphology in="smooth-alpha" operator="dilate" radius="5"/><feComponentTransfer result="expanded"><feFuncA type="linear" slope="16" intercept="-7.5"/></feComponentTransfer><feFlood flood-color="#f7f7f5"/><feComposite in2="expanded" operator="in" result="outline"/><feMerge><feMergeNode in="outline"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
   </svg>
   <div class="hero-stage">
-    <svg class="hero-ink" viewBox="0 0 1440 730" preserveAspectRatio="none" aria-hidden="true">
+    <div class="hero-motion-wipe" aria-hidden="true"></div>
+    <div class="hero-motion-impact" aria-hidden="true"></div>
+    <svg class="hero-ink" data-hero-layer="ink" viewBox="0 0 1440 730" preserveAspectRatio="none" aria-hidden="true">
       <defs><pattern id="hero-window-grid" width="19" height="24" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="5" height="9" fill="#f7f7f5" opacity=".3"/></pattern></defs>
       <path fill="#ff002b" d="M0 18 450 0 350 45 557 19 475 91 653 65 580 172 263 141 109 292 0 208Z M1240 0 1440 23 1420 197 1355 98 1256 150 1294 54Z M0 584 97 618 38 683 240 627 335 707 0 730Z M1214 551 1440 491 1370 594 1440 631 1310 700 1030 730Z"/>
       <g fill="#050505"><path d="M370 167V77l35-18 36 18v101h20V58l37-22 32 22v138h24V91l30-17 30 17v133h22V135l28-15 28 15v117H370Z"/><path d="M1120 288V185l25-10 26 10v67h20V120l33-19 32 19v204h22V175l37-18 35 18v177H1120Z"/></g>
@@ -17,21 +24,22 @@ import '../../styles/hero.css';
       <g stroke="#f7f7f5" fill="none"><path stroke-width="10" d="M-30 91 102 126 52 142 167 165M-40 432 121 396 81 443 149 421M1329 42 1388 113 1366 88 1470 209M1161 674 1264 630 1217 663 1451 589"/><path stroke-width="2" d="m0 285 93-73m-71 268 108-27m-44 108 124-68m900-399 211-82m-40 75 93-20m-289 562 340-129"/></g>
       <g fill="#f7f7f5"><path d="m22 57 95-11-16 20 46-7-45 31ZM369 6l13 12 24-6-14 23-33-7ZM1270 403l20-41 9 28 28-12-23 46Z"/><path d="m266 672 77-14-34 21 19 11-63 3Z"/></g>
     </svg>
-    <div class="hero-edge-collage" aria-hidden="true">
+    <div class="hero-edge-collage" data-hero-layer="panels" aria-hidden="true">
       <div class="hero-edge-panel hero-edge-panel--one"><PortfolioImage src={assets.manga[0]} alt="" label="MANGA ART" variant="manga" width={300} height={400}/></div>
       <div class="hero-edge-panel hero-edge-panel--two"><PortfolioImage src={assets.manga[2]} alt="" label="MANGA ART" variant="manga" width={300} height={400}/></div>
       <div class="hero-edge-panel hero-edge-panel--three"><PortfolioImage src={assets.manga[3]} alt="" label="MANGA ART" variant="manga" width={300} height={400}/></div>
     </div>
     <div class="hero-editorial-copy">
-      <div class="hero-name-block"><span class="hero-hello">HEY, I’M</span><h1 id="hero-title" class="hero-name"><span class="hero-name-line"><b><em>J</em>OVAN</b></span><span class="hero-name-line hero-name-line--surname"><b><em>P</em>RABOWO</b></span><small>KUNCORO</small></h1></div>
-      <p class="hero-profession">Software Engineer <span>|</span> Full-Stack Developer <span>|</span> AI Engineer</p>
-      <p class="hero-intro">I build web applications, AI-powered systems, and business solutions that turn ideas into real impact.</p>
-      <div class="hero-actions"><ComicButton href="#projects">VIEW MY WORK <span>→</span></ComicButton><ComicButton href="#about" secondary>ABOUT ME <span>↓</span></ComicButton></div>
+      <div class="hero-name-block"><span class="hero-hello" data-hero-part="hello">HEY, I’M</span><h1 id="hero-title" class="hero-name"><span class="hero-name-line" data-hero-part="first-name"><b><em>J</em>OVAN</b></span><span class="hero-name-line hero-name-line--surname" data-hero-part="surname"><b><em>P</em>RABOWO</b></span><small data-hero-part="last-name">KUNCORO</small></h1></div>
+      <p class="hero-profession" data-hero-layer="role">Software Engineer <span>|</span> Full-Stack Developer <span>|</span> AI Engineer</p>
+      <p class="hero-intro" data-hero-layer="intro">I build web applications, AI-powered systems, and business solutions that turn ideas into real impact.</p>
+      <div class="hero-actions" data-hero-layer="actions"><ComicButton href="#projects">VIEW MY WORK <span>→</span></ComicButton><ComicButton href="#about" secondary>ABOUT ME <span>↓</span></ComicButton></div>
     </div>
-    <div class="hero-red-portrait" aria-hidden="true"><PortfolioImage src={assets.hero.manga} alt="" label="MANGA ART" variant="manga" width={540} height={720}/></div>
-    <div class="hero-cutout"><PortfolioImage src={assets.hero.person} alt="Jovan Prabowo Kuncoro portrait illustration" label="REPLACE HERO PHOTO" width={810} height={1080} eager/></div>
-    <div class="hero-location-tags" aria-label="Jakarta, Malang, and wherever is next"><span>JAKARTA</span><span>MALANG</span><span>↗ NEXT?</span></div>
-    <div class="hero-perspective"><svg viewBox="0 0 70 55" aria-hidden="true"><path d="m8 43-4-31 22 16L38 4l9 24 20-16-8 33Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></svg><p>SAME PERSON.<br/>DIFFERENT<br/>PERSPECTIVE.</p></div>
+    <div class="hero-red-portrait" data-hero-layer="shadow" aria-hidden="true"><PortfolioImage src={assets.hero.manga} alt="" label="MANGA ART" variant="manga" width={540} height={720}/></div>
+    <div class="hero-cutout hero-cutout--cinematic" data-hero-layer="character"><PortfolioImage src={assets.hero.person} alt="Portrait of Jovan Prabowo Kuncoro with cinematic red lighting" label="HERO PORTRAIT" width={1000} height={1500} eager/></div>
+    <div class="hero-location-tags" data-hero-layer="tags" aria-label="Jakarta, Malang, and wherever is next"><span>JAKARTA</span><span>MALANG</span><span>↗ NEXT?</span></div>
+    <div class="hero-perspective" data-hero-layer="perspective"><svg viewBox="0 0 70 55" aria-hidden="true"><path d="m8 43-4-31 22 16L38 4l9 24 20-16-8 33Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></svg><p>SAME PERSON.<br/>DIFFERENT<br/>PERSPECTIVE.</p></div>
   </div>
-  <svg class="hero-paper-tear" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true"><path fill="#050505" d="m0 112 1440-96v114H0Z"/><path fill="#f7f7f5" d="m0 109 110-9 29 6 79-15 73 1 15-8 116-2 92-16 22 8 90-18 21 3 99-13 40 5 143-16 45 4 79-16 22 5 127-19 32 3 59-7 29-10 93-10v19l-81 13-45-1-42 13-64 1-39 9-129 9-37 10-84 2-44 12-130 6-76 16-41-3-120 20-40-3-114 11-31 10-83-2-93 15-42-1-108 12Z"/><path fill="#ff002b" d="m0 125 150-13-15 9 222-15-63 12 233-13-134 17H0Zm1190-90 55-12-14 8 101-13-76 19Z"/></svg>
+  <svg class="hero-paper-tear" data-hero-layer="tear" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true"><path fill="#050505" d="m0 112 1440-96v114H0Z"/><path fill="#f7f7f5" d="m0 109 110-9 29 6 79-15 73 1 15-8 116-2 92-16 22 8 90-18 21 3 99-13 40 5 143-16 45 4 79-16 22 5 127-19 32 3 59-7 29-10 93-10v19l-81 13-45-1-42 13-64 1-39 9-129 9-37 10-84 2-44 12-130 6-76 16-41-3-120 20-40-3-114 11-31 10-83-2-93 15-42-1-108 12Z"/><path fill="#ff002b" d="m0 125 150-13-15 9 222-15-63 12 233-13-134 17H0Zm1190-90 55-12-14 8 101-13-76 19Z"/></svg>
 </section>
+<script>import '../../scripts/hero-motion';</script>

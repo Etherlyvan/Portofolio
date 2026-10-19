@@ -1,0 +1,8 @@
+Use case: background-extraction
+Asset type: transparent full-body hero cutout for an existing comic portfolio website
+Input image: the supplied local stadium-front photograph is the only edit target and the only identity/pose source.
+Primary request: Extract only Jovan, the central young man, from the photograph. Remove the entire stadium, crowd, fences, lights, signs, pavement, and every other person. Produce a genuinely transparent background.
+Subject invariants: preserve the exact real face and serious expression; preserve the exact hairstyle; preserve the exact standing posture; preserve the single raised rock-hand gesture and the relaxed arm; preserve the exact black short-sleeve shirt, jeans, wristbands, watch/accessories, skin tone, body proportions, and photographic lighting. Include the full visible person from hair through the lowest visible legs/clothing in the source.
+Composition: one isolated person centered with transparent padding around hair, raised hand, relaxed hand, shoulders, and legs. Natural proportions suitable for a website hero.
+Edge treatment: clean high-fidelity cutout edges around hair, fingers, wristbands, sleeves, shirt, and trousers. Keep original monochrome photographic texture.
+Constraints: background removal and edge cleanup only. Do not change the face, expression, pose, hand sign, fingers, clothing, accessories, or body. Do not add red slashes, captions, typography, comic filters, white outline, shadow, watermark, extra fingers, or missing fingers.

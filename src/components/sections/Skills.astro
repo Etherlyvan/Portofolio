@@ -1,9 +1,24 @@
----
+﻿---
 import { skills } from '../../data/skills';
 import { assets } from '../../config/assets';
-import ComicLabel from '../comic/ComicLabel.astro';
-import MangaPlaceholder from '../comic/MangaPlaceholder.astro';
 import SkillIcon from '../ui/SkillIcon.astro';
-import '../../styles/projects-skills.css';
+import '../../styles/skills-persona.css';
+const categories = [['all','All'],['frontend','Frontend'],['backend','Backend'],['ai','AI/ML'],['tools','Tools'],['other','Other']];
 ---
-<section id="skills" class="comic-section skills skills-concept"><div class="section-inner"><div class="section-top"><ComicLabel number="04" title="SKILLS" /><div class="filters" data-filter-group="skills" aria-label="Filter skills" hidden>{[['all', 'All'], ['frontend', 'Frontend'], ['backend', 'Backend'], ['ai', 'AI/ML'], ['tools', 'Tools'], ['other', 'Other']].map(([value, label]) => <button data-filter={value} aria-pressed={value === 'all'}>{label}</button>)}</div></div><div class="skills-layout"><div class="skill-grid">{skills.map(skill => <div class="skill-tile" data-skill data-category={skill.category}><SkillIcon name={skill.name} color={skill.color} /><span>{skill.name}</span></div>)}</div><div class="skills-art"><MangaPlaceholder src={assets.manga[2]} /><p class="scribble paper-note">CURIOUS BUILDER.<br/>PROBLEM SOLVER.<br/>LIFELONG LEARNER.</p></div></div><p class="sr-only" id="skill-status" aria-live="polite"></p></div></section>
+<section id="skills" class="skills-persona" aria-labelledby="skills-title">
+ <div class="skills-persona__inner">
+  <div class="skills-persona__content">
+   <header class="skills-persona__heading"><h2 id="skills-title"><span>04.</span> SKILLS</h2><p>TOOLS I USE TO BUILD</p></header>
+   <div class="skills-persona__filters" data-filter-group="skills" aria-label="Filter skills" hidden>{categories.map(([value,label])=><button type="button" data-filter={value} aria-pressed={value==='all'}>{label}</button>)}</div>
+   <div class="skills-persona__grid" role="group" aria-label="Technologies">{skills.map(skill=><button type="button" class="skills-persona__tile" data-skill data-skill-id={skill.id} data-category={skill.category} data-name={skill.name} data-description={skill.description} aria-pressed={skill.id==='react'}><span class="skills-persona__tile-inner"><SkillIcon name={skill.name} color={skill.color}/><span>{skill.name}</span></span></button>)}</div>
+   <div class="skills-persona__detail" aria-live="polite" aria-atomic="true"><strong data-skill-name>React</strong><span data-skill-detail>Frontend / Component-based interfaces.</span></div>
+   <p class="sr-only" id="skill-status" aria-live="polite"></p>
+  </div>
+  <div class="skills-persona__stage" aria-hidden="true">
+   <svg class="skills-persona__burst" viewBox="0 0 500 760" preserveAspectRatio="none"><path fill="#ff002b" d="M80 0 500 0 450 120 500 80 390 280 500 235 475 455 500 540 370 610 500 760 0 760 105 605 0 660 110 475 0 500 85 320 0 215 165 240Z"/><g fill="#f7f7f5"><path d="m0 0 145 260-70-70 130 240-85-245ZM500 50 270 320 335 210 500 0ZM460 760 280 480 340 540 210 355ZM0 670 180 550 110 650Z"/></g></svg>
+   <img src={assets.skills.person} alt="" width="650" height="1000" loading="lazy" />
+   <div class="skills-persona__captions"><span>CURIOUS BUILDER</span><span>PROBLEM SOLVER</span><span>LIFELONG LEARNER</span></div>
+  </div>
+ </div>
+</section>
+<script>import '../../scripts/skills-persona';</script>

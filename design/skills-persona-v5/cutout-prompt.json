@@ -1,0 +1,6 @@
+{
+  "generator": "built-in image_gen",
+  "prompt": "Background extraction only. Remove ALL stadium, crowd, signs and floor background from reference portrait. Keep only the EXACT same monochrome man, from hair through upper thighs, with crossed arms, black open short-sleeve shirt, face expression, hairstyle and all clothing details unchanged. Preserve natural body proportions. True transparent background, clean detailed edges around hair and arms. Center subject, all head/arms fully visible, minimal transparent padding. Do not draw outline, text, new accessories, or alter face. Asset is a CSS/SVG composited character cutout for a portfolio Skills game-menu stage.",
+  "source": "C:\\Users\\jovan\\.codex\\generated_images\\01a10ef1-e02c-7a72-b5dc-79ae7d52f8bb\\exec-2cab2cfd-9c33-46b6-9813-00d9990c552a.png",
+  "destination": "public/images/skills-persona/jovan-cutout.webp"
+}

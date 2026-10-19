@@ -1,0 +1,12 @@
+Generator: built-in image_gen
+Use case: ui-mockup
+Asset type: wide 16:9 animation storyboard for an Astro portfolio Experience section
+
+Create a polished 2x2 storyboard showing the supplied Experience section changing between four career choices. Preserve the three-column layout, black halftone background, scarlet #ff002b, warm off-white torn paper, sharp diagonal cuts, and original Persona-inspired Japanese RPG menu energy without using game logos or copyrighted characters.
+
+Frame 01: RAHO Premier selected, monochrome leaning pose, idle state at 0 ms.
+Frame 02: Sekawan Media selected during a red-white slash transition, old paper and portrait split into diagonal shards, new bomber-jacket portrait entering, 0–220 ms.
+Frame 03: Genbatik selected, arms-crossed monochrome portrait impacts over a rotated red burst, 220–480 ms.
+Frame 04: Batikpedia selected, laptop-working comic-sketch portrait in a torn polygon frame with subtle batik/circuit motif, settled at 480–650 ms.
+
+Keep the same slim young Indonesian man and face across all poses. The active tab, central content, and right photo must all change together. Interface dimensions stay fixed in every frame; no layout jump, blank gaps, generic corporate cards, glassmorphism, blue neon, invented game stats, duplicated portraits, browser chrome, or watermark.

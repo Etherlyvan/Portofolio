@@ -1,5 +1,5 @@
 ﻿---
-import { experience } from '../../data/experience';
+import Experience from './Experience.astro';
 import { assets, links } from '../../config/assets';
 import ComicSeam from '../comic/ComicSeam.astro';
 import '../../styles/editorial-v2.css';
@@ -16,19 +16,15 @@ import '../../styles/editorial-v2.css';
         <li><span aria-hidden="true">&#9678;</span>English, Japanese</li>
         <li><span aria-hidden="true">&#9993;</span><a href="mailto:jovanku1@gmail.com">jovanku1@gmail.com</a></li>
         <li><span aria-hidden="true">&#9635;</span>Open to opportunities</li>
-        <li><span aria-hidden="true">&#9742;</span><a href="tel:+6281203742584">+62 812-0374-2584</a></li>
+        <li><span aria-hidden="true">&#9742;</span><a href="tel:+6281203742584">+62 812-3374-2584</a></li>
       </ul>
       <div class="v2-cv-row">{links.cv ? <a class="v2-cv" href={links.cv}>DOWNLOAD CV <span aria-hidden="true">&#8595;</span></a> : <button class="v2-cv" disabled title="CV available on request">DOWNLOAD CV <span aria-hidden="true">&#8595;</span></button>}<small class="v2-cv-caption">CV available on request.</small></div>
     </div>
     <figure class="v2-portrait"><img src={assets.about.person ?? ''} alt="Jovan enjoying coffee at a beachside cafe at dusk" width="1200" height="900" loading="lazy" /><figcaption>LET'S BUILD<br/>SOMETHING<br/>GREAT.</figcaption></figure>
   </section>
   <div class="about-seam"><ComicSeam variant={0} /></div>
-  <section id="experience" class="v2-experience" aria-labelledby="v2-experience-heading">
-    <h2 id="v2-experience-heading" class="v2-heading"><span>02.</span><b>EXPERIENCE</b></h2>
-    <div class="v2-experience-art"><div class="v2-red-portrait" aria-hidden="true"><img src={assets.manga[1] ?? ''} alt="" width="540" height="720" loading="lazy" /></div></div>
-    <ol class="v2-timeline">{experience.map(item => <li class="v2-job"><div class="v2-job-heading"><h3>{item.company}</h3><time>{item.date}</time></div><p>{item.role}</p><ul>{item.points.map(point=><li>{point}</li>)}</ul></li>)}</ol>
-    <p class="v2-build-note"><span aria-hidden="true">&#9813;</span><br/>BUILD<br/>LEARN<br/>REPEAT</p>
-  </section>
+  <Experience />
   <ComicSeam variant={1} />
 </div>
+
 

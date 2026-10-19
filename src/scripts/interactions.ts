@@ -67,6 +67,7 @@ document.querySelectorAll<HTMLElement>('[data-filter-group]').forEach(group => {
     items.forEach(item => { const show = value === 'all' || item.dataset.category?.split(' ').includes(value); item.hidden = !show; if (show) count++; });
     group.querySelectorAll<HTMLButtonElement>('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === value)));
     if (status) status.textContent = `${count} ${projectGroup ? 'projects' : 'skills'} shown.`;
+    if (!projectGroup) group.dispatchEvent(new CustomEvent('skills:filtered', { bubbles: true, detail: { category: value, count } }));
   };
   group.hidden = false;
   group.addEventListener('click', event => { const button = (event.target as HTMLElement).closest<HTMLButtonElement>('[data-filter]'); if (button?.dataset.filter) filter(button.dataset.filter); });
