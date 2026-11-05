@@ -1,0 +1,14 @@
+---
+import { getKariConfig } from '../../config/kari';
+
+const kari = getKariConfig({
+  KARI_ENABLED: import.meta.env.KARI_ENABLED,
+  KARI_WIDGET_URL: import.meta.env.KARI_WIDGET_URL,
+  KARI_API_BASE: import.meta.env.KARI_API_BASE,
+  KARI_SITE_ID: import.meta.env.KARI_SITE_ID,
+});
+---
+{kari && <>
+  <kari-widget api-base={kari.apiBase} site-id={kari.siteId} position="bottom-right"></kari-widget>
+  <script is:inline type="module" src={kari.widgetUrl}></script>
+</>}

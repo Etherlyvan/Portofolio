@@ -5,3 +5,7 @@ dist/
 .env.*
 !.env.example
 .verification/
+
+# Local AI planning documents and notes
+/AI_*.md
+/.ai-notes/

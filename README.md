@@ -54,6 +54,14 @@ docker compose exec portfolio nginx -t
 
 Open http://localhost:8080. To use your public origin, copy `.env.example` to `.env` and set `SITE_URL` before building. Compose uses the value as a build argument. If 8080 is occupied, set `PORTFOLIO_PORT=8088` (or another free port) in `.env`. Stop with `docker compose down`.
 
+## Widget KARI (opsional)
+
+KARI adalah project terpisah untuk maskot, animasi, bubble chat dan backend AI. Portfolio menyediakan titik embed yang nonaktif secara default, proxy `/kari/`, dan artifact fakta publik `/kari-knowledge.json`; tidak memasang dependency backend atau menyimpan secret KARI.
+
+Aktifkan saat membangun dengan `KARI_ENABLED=true`, `KARI_WIDGET_URL`, `KARI_API_BASE`, dan `KARI_SITE_ID`. Mengaktifkan flag saja belum menyediakan service KARI: loader/widget dan backend harus dijalankan dari repo KARI atau hosting KARI yang sesuai. Compose di repo portfolio ini tetap hanya menjalankan website.
+
+Lihat **[README_KARI.md](README_KARI.md)** untuk konfigurasi lokal/Docker, pemasangan pada website lain lewat HTML, Astro, React atau WordPress, perintah posisi, batas keamanan, dan troubleshooting. Widget publik tidak membuka akses catatan atau mode pribadi pemilik.
+
 ## Project structure
 
 ```text
